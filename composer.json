@@ -1,0 +1,16 @@
+{
+    "name": "tofaruk/raw-to-advance-php",
+    "description": "Raw to advance php topics",
+    "authors": [
+        {
+            "name": "Omar Faruk",
+            "email": "tofarukomar@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "require": {}
+}
