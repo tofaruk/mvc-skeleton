@@ -4,7 +4,7 @@ I will try implement different topics in this project. There will be different g
 Epic branches will have  more than one branch to check are they working together or not. Remember every time you switch the branch maybe need to run composer install command.  
 
 #### Start the server 
-Run this command in project directory `php -S localhost:8080 public/index.php`
+Run this command in project directory `php -S localhost:8080 -t public/`
 
 ##TODOS
 - [X] composer : master branch 
