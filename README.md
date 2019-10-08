@@ -9,12 +9,13 @@ Run this command in project directory `php -S localhost:8080 public/index.php`
 ##TODOS
 - [X] composer : master branch 
 - [X] namespace   
-- [ ] phpinit
+- [X] phpinit
 - [ ] database connection 
+- [ ] orm  
 - [ ] mvc  
+- [ ] templating   
 - [ ] routing   
 - [ ] validation   
 - [ ] login    
-- [ ] orm    
 - [ ] cache    
-- [ ] templating     
+  
