@@ -8,4 +8,5 @@ echo '<h2>Index file</h2>';
 
 $helper = new Helper();
 
+$helper->pd('Omar', true);
 $helper->pd(array("name"=>'Omar'));
