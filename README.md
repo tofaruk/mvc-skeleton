@@ -9,12 +9,14 @@ Run this command in project directory `php -S localhost:8080 public/index.php`
 ##TODOS
 - [X] composer : master branch 
 - [X] namespace   
-- [ ] phpinit
-- [ ] database connection 
+- [X] phpinit
+- [X] database connection 
+- [ ] orm  
 - [ ] mvc  
+- [ ] templating   
 - [ ] routing   
 - [ ] validation   
 - [ ] login    
-- [ ] orm    
 - [ ] cache    
-- [ ] templating     
+- [ ] enable xdebug 
+- [ ] read credentials from .env file and create .env.dist file 
