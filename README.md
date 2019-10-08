@@ -18,3 +18,4 @@ Run this command in project directory `php -S localhost:8080 public/index.php`
 - [ ] orm    
 - [ ] cache    
 - [ ] templating     
+- [ ] read credentials from .env file and create .env.dist file 
