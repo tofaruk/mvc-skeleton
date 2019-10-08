@@ -23,3 +23,4 @@ Followed link: [Here](https://phpunit.de/getting-started/phpunit-8.html)
 ### TODOs 
 - [X] add example test : 
 - [ ] add mock test example    
+- [ ] add data provider example     
