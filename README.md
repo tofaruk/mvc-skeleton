@@ -10,7 +10,7 @@ Run this command in project directory `php -S localhost:8080 public/index.php`
 - [X] composer : master branch 
 - [X] namespace   
 - [X] phpinit
-- [ ] database connection 
+- [X] database connection 
 - [ ] orm  
 - [ ] mvc  
 - [ ] templating   
