@@ -13,7 +13,7 @@ class League extends AbstractController
         parent::__construct(new Template());
     }
 
-    public function indexMethod()
+    public function indexAction()
     {
         return parent::getView(
             __METHOD__,
@@ -24,7 +24,7 @@ class League extends AbstractController
         );
     }
 
-    public function teamMethod()
+    public function teamAction()
     {
         return parent::getView(
             __METHOD__,

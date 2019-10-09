@@ -13,14 +13,13 @@ class Home extends AbstractController
         parent::__construct(new Template());
     }
 
-    public function indexMethod()
+    public function indexAction()
     {
         return parent::getView(
             __METHOD__,
             [
                 'title'=> ' Home',
                 'welcome'=> 'Welcome to Home',
-              //  'application_name'=> 'Raw to advance php',
             ]
         );
     }
