@@ -23,9 +23,11 @@ class Request
         $this->files = $files;
     }
 
-    public function getServer($index = null)
+    public function getServer()
     {
+        return $this->server;
         return !is_null($index) & isset($this->server[$index]) ? $this->server[$index] : null;
+
     }
 
     public function getPost()
@@ -41,6 +43,26 @@ class Request
     public function getFiles()
     {
         return $this->files;
+    }
+
+    public function getServerData($index = null)
+    {
+        return $this->getData($this->server, $index);
+    }
+
+    public function getPostData($index = null)
+    {
+        return $this->getData($this->post, $index);
+    }
+
+    public function getGetData($index = null)
+    {
+        return $this->getData($this->get, $index);
+    }
+
+    public function getFilesData($index = null)
+    {
+        return $this->getData($this->get, $index);
     }
 
     public function getController()
@@ -90,7 +112,10 @@ class Request
 
     private function getUrlParts()
     {
-        $url = str_replace(APP_INNER_DIRECTORY, null, $this->getServer('REQUEST_URI'));
+        $url = str_replace(APP_INNER_DIRECTORY, null, $this->getServerData('REQUEST_URI'));
+        // removing queryString
+        $url = current(explode('?',$url));
+
         $urlParts = explode('/', $url);
         $urlParts = array_filter($urlParts);
         $urlParts = array_values($urlParts);
@@ -111,5 +136,15 @@ class Request
         }
 
         return $method . APP_CONTROLLER_METHOD_SUFFIX;
+    }
+
+    /**
+     * @param array $dataFrom
+     * @param $index
+     * @return mixed|null\
+     */
+    private function getData($dataFrom = [], $index)
+    {
+        return !is_null($index) & isset($dataFrom[$index]) ? $dataFrom[$index] : null;
     }
 }

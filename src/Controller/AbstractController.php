@@ -3,19 +3,9 @@
 namespace App\Controller;
 
 
-use App\Core\Template;
+use App\Core\Request;
 
-class AbstractController
+abstract class AbstractController
 {
-    private $template;
-
-    public function __construct()
-    {
-        $this->template = new Template();
-    }
-
-    protected function getView($controller, array $variables = [])
-    {
-        return $this->template->getView($controller, $variables);
-    }
+    abstract public function indexAction(Request $request);
 }

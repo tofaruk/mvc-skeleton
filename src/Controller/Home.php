@@ -2,24 +2,39 @@
 
 namespace App\Controller;
 
-
-use App\Core\Template;
+use App\Core\Request;
+use App\Core\View;
 
 class Home extends AbstractController
 {
-    public function __construct()
+    public function indexAction(Request $request)
     {
-        parent::__construct();
+        return View::render();
     }
 
-    public function indexAction()
+    public function productsAction(Request $request)
     {
-        return parent::getView(
-            __METHOD__,
+        $products = [
             [
-                'title'=> ' Home',
-                'welcome'=> 'Welcome to Home',
-            ]
-        );
+                'name' => 'Notebook',
+                'description' => 'Core i7',
+                'value' => 800.00,
+                'date_register' => '2017-06-22',
+            ],
+            [
+                'name' => 'Mouse',
+                'description' => 'Razer',
+                'value' => 125.00,
+                'date_register' => '2017-10-25',
+            ],
+            [
+                'name' => 'Keyboard',
+                'description' => 'Mechanical Keyboard',
+                'value' => 250.00,
+                'date_register' => '2017-06-23',
+            ],
+        ];
+
+        return View::render(['products'=>$products],'products.html.twig',);
     }
 }

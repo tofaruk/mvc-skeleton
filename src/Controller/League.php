@@ -2,34 +2,26 @@
 
 namespace App\Controller;
 
-
-use App\Core\Template;
+use App\Core\Request;
+use App\Core\View;
 
 class League extends AbstractController
 {
-    public function __construct()
+    public function indexAction(Request $request)
     {
-       parent::__construct();
+
+        return View::render([
+            'title'=> ' League',
+            'welcome'=> 'Welcome to League',
+        ],'index.html.twig');
+
     }
 
-    public function indexAction()
+    public function teamAction(Request $request)
     {
-        return parent::getView(
-            __METHOD__,
-            [
-                'title'=> ' League',
-                'welcome'=> 'Welcome to League',
-            ]
-        );
-    }
+       return View::render([
+            'team'=> 'Barcelona',
+        ]);
 
-    public function teamAction()
-    {
-        return parent::getView(
-            __METHOD__,
-            [
-                'team'=> 'Barcelona',
-            ]
-        );
     }
 }
