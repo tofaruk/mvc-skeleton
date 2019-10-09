@@ -15,11 +15,11 @@ class Template
         $this->viewPath = sprintf($this->viewPath, APP_ROOT);
     }
 
-    public function getView($controller, array $variables = [])
+    public function getView($methodPath, array $variables = [])
     {
         $variables = $this->validateVariables($variables);
 
-        $parts = explode('::', $controller);
+        $parts = explode('::', $methodPath);
         $directory = $this->getDirectory($parts[0]);
         $file = $this->getFile($parts[1]);
 
@@ -61,8 +61,8 @@ class Template
         return end($parts);
     }
 
-    private function getFile($controller)
+    private function getFile($method)
     {
-        return str_replace(APP_CONTROLLER_METHOD_SUFFIX, null, $controller);
+        return str_replace(APP_CONTROLLER_METHOD_SUFFIX, null, $method);
     }
 }

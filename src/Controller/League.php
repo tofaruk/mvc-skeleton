@@ -9,8 +9,7 @@ class League extends AbstractController
 {
     public function __construct()
     {
-        // TODO Parent does not receive this depedency
-        parent::__construct(new Template());
+       parent::__construct();
     }
 
     public function indexAction()

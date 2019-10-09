@@ -16,8 +16,6 @@ class AbstractController
 
     protected function getView($controller, array $variables = [])
     {
-        // TODO not defined this method
-        //
         return $this->template->getView($controller, $variables);
     }
 }

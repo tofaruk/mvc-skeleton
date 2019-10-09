@@ -25,7 +25,7 @@ class Request
 
     public function getServer($index = null)
     {
-        return !is_null($index) & isset($this->server[$index]) ? $this->server[$index] : $this->server;
+        return !is_null($index) & isset($this->server[$index]) ? $this->server[$index] : null;
     }
 
     public function getPost()
