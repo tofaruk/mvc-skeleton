@@ -6,6 +6,9 @@ Epic branches will have  more than one branch to check are they working together
 #### Start the server 
 Run this command in project directory `php -S localhost:8080 -t public/`
 
+## Tips 
+* `composer dump-autoload -o` to generate autoloader 
+
 ##TODOS
 - [X] composer : master branch 
 - [X] namespace   
