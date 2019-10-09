@@ -3,7 +3,7 @@
 use App\Core\Request;
 use App\Shared\Helper;
 
-require __DIR__."/../src/Config/config.php";
+require __DIR__ . "/../config/config.php";
 require __DIR__."/../vendor/autoload.php";
 
 echo '<h2>Index file</h2>';

@@ -20,7 +20,16 @@ class League extends AbstractController
             [
                 'title'=> ' League',
                 'welcome'=> 'Welcome to League',
-              //  'application_name'=> 'League app',
+            ]
+        );
+    }
+
+    public function teamMethod()
+    {
+        return parent::getView(
+            __METHOD__,
+            [
+                'team'=> 'Barcelona',
             ]
         );
     }

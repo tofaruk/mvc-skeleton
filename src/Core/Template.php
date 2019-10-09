@@ -37,7 +37,7 @@ class Template
         }
 
         http_response_code(404);
-        throw new Exception(sprintf('View cannot be found: [%s]', $viewPath), 404);
+        throw new \Exception(sprintf('View cannot be found: [%s]', $viewPath), 404);
     }
 
     private function validateVariables(array $variables = [])

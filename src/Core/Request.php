@@ -2,9 +2,6 @@
 
 namespace App\Core;
 
-
-use mysql_xdevapi\Exception;
-
 class Request
 {
     private $server;
@@ -62,7 +59,7 @@ class Request
 
         // Otherwise
         http_response_code(404);
-        throw new Exception(sprintf('Controller cannot be found: [%s]', APP_CONTROLLER_NAMESPACE . $urlParts[0]), 404);
+        throw new \Exception(sprintf('Controller cannot be found: [%s]', APP_CONTROLLER_NAMESPACE . $urlParts[0]), 404);
     }
 
     public function getMethod($controller)
@@ -77,7 +74,7 @@ class Request
         // If controller method name pattern is invalid
         if (!preg_match('/^[a-z\-]+$/', $urlParts[1])) {
             http_response_code(400);
-            throw new Exception(sprintf('Invalid method: [%s]', $urlParts[1]), 400);
+            throw new \Exception(sprintf('Invalid method: [%s]', $urlParts[1]), 400);
         }
 
         // If controller method exists in system then return it
@@ -88,7 +85,7 @@ class Request
 
         // Otherwise
         http_response_code(404);
-        throw new Exception(sprintf('Method cannot be found: [%s:%s]', $controller, $method), 404);
+        throw new \Exception(sprintf('Method cannot be found: [%s:%s]', $controller, $method), 404);
     }
 
     private function getUrlParts()

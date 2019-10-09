@@ -2,7 +2,7 @@
 define('APP_NAME', 'Raw to advance php');
 define('APP_DOMAIN', 'http://localhost:8080');
 define('APP_INNER_DIRECTORY', '/raw-to-advance-php');
-define('APP_ROOT', __DIR__.'/..');
+define('APP_ROOT', __DIR__ . '/../src');
 // TODO not modified
 define('APP_CONTROLLER_NAMESPACE', 'App\\Controller\\');
 define('APP_DEFAULT_CONTROLLER', 'Home');
