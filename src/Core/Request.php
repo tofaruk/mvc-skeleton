@@ -73,10 +73,10 @@ class Request
         if (!isset($urlParts[0])) {
             return APP_CONTROLLER_NAMESPACE . APP_DEFAULT_CONTROLLER;
         }
-
+        $controllerName = sprintf("%s%s",$urlParts[0],APP_CONTROLLER_SUFFIX);
         // If controller exists in system then return it
-        if (class_exists(APP_CONTROLLER_NAMESPACE . $urlParts[0])) {
-            return APP_CONTROLLER_NAMESPACE . $urlParts[0];
+        if (class_exists(APP_CONTROLLER_NAMESPACE . $controllerName)) {
+            return APP_CONTROLLER_NAMESPACE . $controllerName;
         }
 
         // Otherwise

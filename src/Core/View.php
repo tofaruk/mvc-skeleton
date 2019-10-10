@@ -48,7 +48,7 @@ class View
     {
         $trace = debug_backtrace();
       //  var_dump($trace);
-        $controller = $this->getControllerName($trace);
+        $controller = str_replace(APP_CONTROLLER_SUFFIX,null,$this->getControllerName($trace));
         $method = $this->getControllerMethodName($trace);
         return sprintf("%s/%s", $controller, $method);
     }

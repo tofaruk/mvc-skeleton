@@ -7,3 +7,6 @@ Followed link [here](http://www.inanzzz.com/index.php/post/07gt/creating-a-simpl
 ### TODO
 - [X] add twig template 
 - [ ] add js / css 
+
+### Tips 
+* You can follow some feature https://gist.github.com/anwarishak/2558823

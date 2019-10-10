@@ -2,10 +2,11 @@
 
 namespace App\Controller;
 
+use App\Core\BaseController;
 use App\Core\Request;
 use App\Core\View;
 
-class Home extends AbstractController
+class HomeController extends BaseController
 {
     public function indexAction(Request $request)
     {

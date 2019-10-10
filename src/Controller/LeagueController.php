@@ -2,17 +2,18 @@
 
 namespace App\Controller;
 
+use App\Core\BaseController;
 use App\Core\Request;
 use App\Core\View;
 
-class League extends AbstractController
+class LeagueController extends BaseController
 {
     public function indexAction(Request $request)
     {
 
         return View::render([
-            'title'=> ' League',
-            'welcome'=> 'Welcome to League',
+            'title'=> ' LeagueController',
+            'welcome'=> 'Welcome to LeagueController',
         ],'index.html.twig');
 
     }
