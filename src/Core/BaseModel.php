@@ -2,16 +2,14 @@
 
 namespace App\Core;
 
-
-use App\Config\Database;
-
 abstract class BaseModel
 {
-    protected $_db;
+    /** @var \PDO  */
+    protected $db;
 
     public function __construct()
     {
         $db = Database::getInstance();
-        $this->_db = $db->getConnection();
+        $this->db = $db->getConnection();
     }
 }
