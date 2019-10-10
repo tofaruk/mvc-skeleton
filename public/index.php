@@ -1,17 +1,22 @@
 <?php
 
-use App\Config\Database;
-use App\Shared\Greeting;
-use App\Shared\Helper;
+use App\Core\Request;
 
-require __DIR__."/../vendor/autoload.php";
+require __DIR__ . "/../config/config.php";
+require __DIR__ . "/../vendor/autoload.php";
 
-echo '<h2>Index file</h2>';
-$db = Database::getInstance();
-$greeting= new Greeting($db);
-$helper = new Helper();
-echo $greeting->welcome("Omar");
-echo '<br>',$greeting->hi("Faruk");
-echo '<br>',$greeting->hello("Asha");
+$request = new Request($_SERVER, $_POST, $_GET, $_FILES);
 
-$helper->pd($greeting->getAll("Asha"));
+try {
+    $controller = $request->getController();
+    $method = $request->getMethod($controller);
+    $controller = new $controller;
+    echo $controller->$method($request);
+} catch (Exception $exception) {
+    echo sprintf('<h3>%s</h3><h4>%s</h4><h5>%s:%s</h5>',
+        $exception->getCode(),
+        $exception->getMessage(),
+        $exception->getFile(),
+        $exception->getLine()
+    );
+}
