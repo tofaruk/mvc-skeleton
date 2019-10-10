@@ -14,6 +14,7 @@ class Database
             DB_USER,
             DB_PASS
         );
+        $this->conn->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
     }
 
 
