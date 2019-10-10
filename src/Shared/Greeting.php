@@ -31,7 +31,7 @@ class Greeting
     public function getAll($name=null)
     {
         $greetings = [];
-        $statement = $this->dbConnection->query("SELECT * FROM greetings");
+        $statement = $this->dbConnection->query("SELECT * FROM greeting");
         $rows = $statement->fetchAll(\PDO::FETCH_OBJ);
         foreach ($rows as $row){
             $greetings[] = $row->name." ".$name;
