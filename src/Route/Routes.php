@@ -12,6 +12,8 @@ class Routes
      */
     public static function defineRoutes(RouteCollector $r)
     {
+        $r->addRoute('GET', '/', 'App\Controller\HomeController::indexAction');
+
         $r->addGroup('/greeting', function (RouteCollector $r) {
             $r->addRoute('GET', '', 'App\Controller\GreetingController::indexAction');
             $r->addRoute('GET', '/one/{id:\d+}', 'App\Controller\GreetingController::oneAction');
@@ -22,7 +24,6 @@ class Routes
 
         });
 
-        $r->addRoute('GET', '/tata', 'App\Controller\HomeController::index22Action');
         $r->addRoute('GET', '/home', 'App\Controller\HomeController::indexAction');
         $r->addRoute('GET', '/home/products', 'App\Controller\HomeController::productsAction');
 
