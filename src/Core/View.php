@@ -17,9 +17,14 @@ class View
     private function __construct()
     {
         $this->loader = new FilesystemLoader(sprintf($this->viewPath, APP_ROOT));
-        $options =[];
-        $this->twig = new Environment($this->loader,$options);
-        if(TWIG_DEBUG){
+        $this->initializeTwigEnvironment();
+    }
+
+    private function initializeTwigEnvironment(): void
+    {
+        $options = [];
+        $this->twig = new Environment($this->loader, $options);
+        if (TWIG_DEBUG) {
             $this->twig->enableDebug();
             $this->twig->addExtension(new DebugExtension());
         }
