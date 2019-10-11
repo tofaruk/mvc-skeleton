@@ -7,6 +7,9 @@ use FastRoute\RouteCollector;
 
 class Routes
 {
+    /**
+     * @param RouteCollector $r
+     */
     public static function defineRoutes(RouteCollector $r)
     {
         $r->addGroup('/greeting', function (RouteCollector $r) {

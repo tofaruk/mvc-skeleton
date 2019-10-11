@@ -8,7 +8,11 @@ abstract class BaseModel
 {
     /** @var \PDO */
     protected $db;
+
+    /** @var string|null */
     protected $table = null;
+
+    /** @var Log|null */
     protected $log = null;
 
     public function __construct()
@@ -25,13 +29,13 @@ abstract class BaseModel
     {
         try {
             $statement = $this->db->query("SELECT * FROM " . $this->table);
-           return $result = $statement->fetchAll(\PDO::FETCH_OBJ);
+            return $result = $statement->fetchAll(\PDO::FETCH_OBJ);
         } catch (\PDOException $e) {
             $error = array("info" => $e->getMessage());
         } catch (\Exception $e) {
-            $error = array( "info" => $e->getMessage());
+            $error = array("info" => $e->getMessage());
         }
         $this->log->error(__METHOD__, $error);
-        return ;
+        return;
     }
 }

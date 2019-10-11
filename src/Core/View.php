@@ -18,6 +18,9 @@ class View
         $this->twig = new Environment($this->loader);
     }
 
+    /**
+     * @return View|null
+     */
     public static function getInstance()
     {
         if (!self::$instance) {

@@ -8,6 +8,7 @@ use Psr\Log\AbstractLogger;
 
 class Log extends AbstractLogger
 {
+    /** @var string  */
     protected $path = APP_VAR . '/log';
 
     public function __construct()
@@ -15,6 +16,11 @@ class Log extends AbstractLogger
         $this->createPath();
     }
 
+    /**
+     * @param mixed $level
+     * @param string $message
+     * @param array $context
+     */
     public function log($level, $message, array $context = array())
     {
         $record = [
