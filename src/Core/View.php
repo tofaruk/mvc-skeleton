@@ -2,6 +2,7 @@
 
 namespace App\Core;
 
+use Twig\Extension\DebugExtension;
 use Twig\Loader\FilesystemLoader;
 use Twig\Environment;
 
@@ -15,7 +16,13 @@ class View
     private function __construct()
     {
         $this->loader = new FilesystemLoader(sprintf($this->viewPath, APP_ROOT));
-        $this->twig = new Environment($this->loader);
+        $options =[];
+        $this->twig = new Environment($this->loader,$options);
+        if(TWIG_DEBUG){
+            $this->twig->enableDebug();
+            $this->twig->addExtension(new DebugExtension());
+        }
+
     }
 
     /**

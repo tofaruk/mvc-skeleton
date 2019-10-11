@@ -11,6 +11,7 @@ define('APP_DEFAULT_CONTROLLER_METHOD', 'index');
 define('APP_CONTROLLER_METHOD_SUFFIX', 'Action');
 define('APP_CONTROLLER_SUFFIX', 'Controller');
 define('APP_Model_SUFFIX', 'Model');
+define('TWIG_DEBUG', true);
 
 define('DB_HOST', '127.0.0.1');
 define('DB_NAME', 'raw-to-advance-php');
