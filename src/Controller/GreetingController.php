@@ -5,7 +5,7 @@ namespace App\Controller;
 use App\Core\BaseController;
 use App\Core\Request;
 use App\Core\View;
-use App\Model\GreetingBaseModel;
+use App\Model\GreetingModel;
 
 class GreetingController extends BaseController
 {
@@ -13,24 +13,36 @@ class GreetingController extends BaseController
 
     public function __construct()
     {
-        $this->model = new GreetingBaseModel();
+        $this->model = new GreetingModel();
     }
 
-    public function indexAction($params=[], Request $request)
+    public function indexAction($params = [], Request $request)
     {
         $greetings = $this->model->getAll();
         return View::render(['greetings' => $greetings]);
     }
 
-    public function oneAction($params=[], Request $request)
+
+    public function addAction($params = [], Request $request)
     {
-        print_r([__METHOD__,$params]);
-       return '';
+        $postData = [
+            'name' => $request->getPostData('name')
+        ];
+        if ($this->model->add($postData)) {
+            $postData = [];
+        }
+        return View::render(['post_data' => $postData]);
     }
 
-    public function twoAction($params=[], Request $request)
+    public function oneAction($params = [], Request $request)
     {
-        print_r([__METHOD__,$params]);
+        print_r([__METHOD__, $params]);
+        return '';
+    }
+
+    public function twoAction($params = [], Request $request)
+    {
+        print_r([__METHOD__, $params]);
         return '';
     }
 }

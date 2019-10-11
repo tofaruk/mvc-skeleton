@@ -24,3 +24,6 @@ Run this command in project directory `php -S localhost:8080 -t public/`
 - [ ] enable xdebug 
 - [ ] read credentials from .env file and create .env.dist file 
 - [X] Logger : psr/log 
+- [ ] API
+- [X] Form
+- [ ] PHP Form

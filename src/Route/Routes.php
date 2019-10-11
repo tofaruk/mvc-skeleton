@@ -16,6 +16,9 @@ class Routes
 
         $r->addGroup('/greeting', function (RouteCollector $r) {
             $r->addRoute('GET', '', 'App\Controller\GreetingController::indexAction');
+            $r->addRoute('GET', '/add', 'App\Controller\GreetingController::addAction');
+            $r->addRoute('POST', '/add', 'App\Controller\GreetingController::addAction');
+
             $r->addRoute('GET', '/one/{id:\d+}', 'App\Controller\GreetingController::oneAction');
 
             /** same action with different number of params  */

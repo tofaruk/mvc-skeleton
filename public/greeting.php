@@ -3,7 +3,7 @@ require __DIR__."/../vendor/autoload.php";
 
 use App\Config\Database;
 use App\Shared\Greeting;
-echo '<h2>GreetingBaseModel file</h2>';
+echo '<h2>GreetingModel file</h2>';
 
 $db = Database::getInstance();
 $greeting= new Greeting($db);
