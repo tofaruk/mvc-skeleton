@@ -16,9 +16,21 @@ class GreetingController extends BaseController
         $this->model = new GreetingBaseModel();
     }
 
-    public function indexAction(Request $request)
+    public function indexAction($params=[], Request $request)
     {
         $greetings = $this->model->getAll();
         return View::render(['greetings' => $greetings]);
+    }
+
+    public function oneAction($params=[], Request $request)
+    {
+        print_r([__METHOD__,$params]);
+       return '';
+    }
+
+    public function twoAction($params=[], Request $request)
+    {
+        print_r([__METHOD__,$params]);
+        return '';
     }
 }

@@ -8,12 +8,12 @@ use App\Core\View;
 
 class HomeController extends BaseController
 {
-    public function indexAction(Request $request)
+    public function indexAction($prams = [], Request $request)
     {
         return View::render();
     }
 
-    public function productsAction(Request $request)
+    public function productsAction($prams = [], Request $request)
     {
         $products = [
             [
@@ -36,6 +36,6 @@ class HomeController extends BaseController
             ],
         ];
 
-        return View::render(['products'=>$products],'products.html.twig',);
+        return View::render(['products' => $products], 'products.html.twig',);
     }
 }

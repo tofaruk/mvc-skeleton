@@ -8,7 +8,7 @@ use App\Core\View;
 
 class LeagueController extends BaseController
 {
-    public function indexAction(Request $request)
+    public function indexAction($prams =[],Request $request)
     {
 
         return View::render([
@@ -18,7 +18,7 @@ class LeagueController extends BaseController
 
     }
 
-    public function teamAction(Request $request)
+    public function teamAction($prams =[],Request $request)
     {
        return View::render([
             'team'=> 'Barcelona',
