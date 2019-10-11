@@ -4,11 +4,13 @@ use App\Core\Request;
 
 require __DIR__ . "/../config/config.php";
 require __DIR__ . "/../vendor/autoload.php";
-use App\Route\Routes as AppRoutes;
-$dispatcher = FastRoute\simpleDispatcher(function(FastRoute\RouteCollector $r) {
-    $appRoutes = new AppRoutes($r);
-});
 
+use App\Route\Routes as AppRoutes;
+use App\Core\RouteHandler;
+
+$dispatcher = FastRoute\simpleDispatcher(function (FastRoute\RouteCollector $r) {
+    AppRoutes::defineRoutes($r);
+});
 
 // Fetch method and URI from somewhere
 $httpMethod = $_SERVER['REQUEST_METHOD'];
@@ -21,30 +23,22 @@ if (false !== $pos = strpos($uri, '?')) {
 $uri = rawurldecode($uri);
 
 $routeInfo = $dispatcher->dispatch($httpMethod, $uri);
-print_r($routeInfo);
+var_dump($dispatcher);
 $request = new Request($_SERVER, $_POST, $_GET, $_FILES);
 switch ($routeInfo[0]) {
     case FastRoute\Dispatcher::NOT_FOUND:
-        // ... 404 Not Found
+        echo RouteHandler::notFound();
         break;
     case FastRoute\Dispatcher::METHOD_NOT_ALLOWED:
-        $allowedMethods = $routeInfo[1];
-        // ... 405 Method Not Allowed
+        echo RouteHandler::methodNotAllowed($routeInfo[1]);
         break;
     case FastRoute\Dispatcher::FOUND:
-        $handler = $routeInfo[1];
-        $vars = $routeInfo[2];
-        list($controller, $method) = explode("::",$handler);
-        $controller = new $controller;
-        echo $controller->$method($vars, $request);
+        echo RouteHandler::found($routeInfo, $request);
         break;
 }
 
-
-
-$request = new Request($_SERVER, $_POST, $_GET, $_FILES);
-
-/*try {
+/*
+ try {
     $controller = $request->getController();
     $method = $request->getMethod($controller);
     $controller = new $controller;

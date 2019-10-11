@@ -7,18 +7,9 @@ use FastRoute\RouteCollector;
 
 class Routes
 {
-    /** @var RouteCollector|null */
-    public $routeCollector = null;
-
-    public function __construct(RouteCollector $routeCollector)
+    public static function defineRoutes(RouteCollector $r)
     {
-        $this->routeCollector = $routeCollector;
-        $this->defineRoutes();
-    }
-
-    protected function defineRoutes()
-    {
-        $this->routeCollector->addGroup('/greeting', function (RouteCollector $r) {
+        $r->addGroup('/greeting', function (RouteCollector $r) {
             $r->addRoute('GET', '', 'App\Controller\GreetingController::indexAction');
             $r->addRoute('GET', '/one/{id:\d+}', 'App\Controller\GreetingController::oneAction');
 
@@ -28,8 +19,18 @@ class Routes
 
         });
 
-      /*          $this->routeCollector->addRoute('GET','/greeting/{id:.\d*}/{name:.*}','App\Controller\GreetingController::indexAction');
-                $this->routeCollector->addRoute('GET','/greeting/hello/{id:\d*}/','App\Controller\GreetingController::helloAction');
-      */
+        $r->addRoute('GET', '/home', 'App\Controller\HomeController::indexAction');
+        $r->addRoute('GET', '/home/products', 'App\Controller\HomeController::productsAction');
+
+        $r->addRoute('GET', '/home/product', function () {
+            return 'i am from a Closure : Under construction ';
+        });
+
+
+        $r->addGroup('/league', function (RouteCollector $r) {
+            $r->addRoute('GET', '', 'App\Controller\LeagueController::indexAction');
+            $r->addRoute('GET', '/team', 'App\Controller\LeagueController::teamAction');
+        });
+
     }
 }
