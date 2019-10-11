@@ -17,7 +17,7 @@ Run this command in project directory `php -S localhost:8080 -t public/`
 - [ ] orm  
 - [X] mvc  
 - [X] templating : twig   
-- [ ] routing   
+- [X] routing   
 - [ ] validation   
 - [ ] login    
 - [ ] cache    

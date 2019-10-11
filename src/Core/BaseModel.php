@@ -23,18 +23,15 @@ abstract class BaseModel
      */
     public function getAll()
     {
-        $result = [];
         try {
             $statement = $this->db->query("SELECT * FROM " . $this->table);
-            $result = $statement->fetchAll(\PDO::FETCH_OBJ);
+           return $result = $statement->fetchAll(\PDO::FETCH_OBJ);
         } catch (\PDOException $e) {
-            $result = array("status" => false, "info" => $e->getMessage());
+            $error = array("info" => $e->getMessage());
         } catch (\Exception $e) {
-            $result = array("status" => false, "info" => $e->getMessage());
+            $error = array( "info" => $e->getMessage());
         }
-        if (isset($result['status']) && $result['status'] === false) {
-            $this->log->error(__METHOD__, $result);
-        }
-        return $result;
+        $this->log->error(__METHOD__, $error);
+        return ;
     }
 }
