@@ -2,6 +2,7 @@
 
 namespace App\Core;
 
+use App\TwigExtension\AppExtension;
 use Twig\Extension\DebugExtension;
 use Twig\Loader\FilesystemLoader;
 use Twig\Environment;
@@ -22,7 +23,7 @@ class View
             $this->twig->enableDebug();
             $this->twig->addExtension(new DebugExtension());
         }
-
+        $this->twig->addExtension(new AppExtension());
     }
 
     /**
