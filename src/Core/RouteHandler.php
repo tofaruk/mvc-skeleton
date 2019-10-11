@@ -13,8 +13,16 @@ class RouteHandler
         }
         $vars = $routeInfo[2];
         list($controller, $method) = explode("::", $handler);
+        if (!class_exists($controller) || !method_exists($controller, $method)) {
+            return self::routeHandlerNotFound();
+        }
         $controller = new $controller;
         return $controller->$method($vars, $request);
+    }
+
+    public static function routeHandlerNotFound()
+    {
+        return '<h2>Route handler not found</h2>';
     }
 
     public static function notFound()

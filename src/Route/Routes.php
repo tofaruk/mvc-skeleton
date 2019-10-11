@@ -19,6 +19,7 @@ class Routes
 
         });
 
+        $r->addRoute('GET', '/tata', 'App\Controller\HomeController::index22Action');
         $r->addRoute('GET', '/home', 'App\Controller\HomeController::indexAction');
         $r->addRoute('GET', '/home/products', 'App\Controller\HomeController::productsAction');
 

@@ -23,7 +23,6 @@ if (false !== $pos = strpos($uri, '?')) {
 $uri = rawurldecode($uri);
 
 $routeInfo = $dispatcher->dispatch($httpMethod, $uri);
-var_dump($dispatcher);
 $request = new Request($_SERVER, $_POST, $_GET, $_FILES);
 switch ($routeInfo[0]) {
     case FastRoute\Dispatcher::NOT_FOUND:
