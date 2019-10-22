@@ -31,9 +31,9 @@ abstract class BaseModel
             $statement = $this->db->query("SELECT * FROM " . $this->table);
             return $result = $statement->fetchAll(\PDO::FETCH_OBJ);
         } catch (\PDOException $e) {
-            $error = array("info" => $e->getMessage());
+            $error = array("message" => $e->getMessage());
         } catch (\Exception $e) {
-            $error = array("info" => $e->getMessage());
+            $error = array("message" => $e->getMessage());
         }
         $this->log->error(__METHOD__, $error);
         return;

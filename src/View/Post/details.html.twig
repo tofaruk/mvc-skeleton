@@ -1,0 +1,41 @@
+{% extends "layout.html.twig" %}
+{% block content %}
+    <h2>Post Details</h2>
+    {% if post %}
+        <table class="table table-condensed">
+            <tbody>
+            <tr>
+                <th>Title</th>
+                <td>{{ post.title }}</td>
+            </tr>
+            <tr>
+                <th>Details</th>
+                <td>{{ post.content }}</td>
+            </tr>
+            <tr>
+                <th>Created at</th>
+                <td>{{ time_ago(post.created, true) }}</td>
+            </tr>
+            </tbody>
+        </table>
+        <a class="btn btn-info" href="{{ base_url('/post') }}">Back to the list </a>
+        <h2>Available comments: {{ comments| length }}</h2>
+        {% if comments %}
+            <table class="table table-condensed">
+                <tbody>
+                {% for comment in comments %}
+
+                    <tr>
+                        <td>{{ comment.content }}</td>
+                    </tr>
+                    <tr>
+                        <td>Time : {{ time_ago(comment.created) }}</td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        {% endif %}
+
+    {% endif %}
+    <a class="btn btn-info" href="{{ base_url('/post') }}">Back to the list </a>
+{% endblock %}
