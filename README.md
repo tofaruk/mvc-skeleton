@@ -1,5 +1,13 @@
 # Simple MVC Framework
-This is a MVC framework, will help to start a small application. 
+This is a very simple MVC framework, Which will help you to create a small application. In this framework i added very few number of open source packages so its not that powerful but you can easily add new open source package very based on your need.  
+
+#### How to install 
+* Prerequisites : php and mysql installed 
+* Run `composer install && composer dump-autoload -o`
+* Run `cp config/config.dist.php config/config.php` 
+* Add database credentials in `config/config.php`
+* Find database with sample data here `db/simple-mvc-framework.sql`
+* Run this command in project directory `php -S localhost:8080 -t public/`
 
 ## Controllers 
 You can create a controller class in `src/Controller/` directory which will extends `App\Core\BaseController`. 
@@ -72,35 +80,20 @@ $r->addGroup('/post', function (RouteCollector $r) {
 });
 ```
 
-
 ## Other information 
 * You will find log file under this directory `var/log/`
 * Run phpunit tests by this command `./vendor/bin/phpunit tests`
 
-
-#### Start the server 
-* Run `composer install && composer dump-autoload -o`
-* Run `cp config/config.dist.php config/config.php` 
-* Add database credentials in `config/config.php`
-* Find database with sample data `db/simple-mvc-framework.sql`
-* Run this command in project directory `php -S localhost:8080 -t public/`
-
 ##TODOs
-- [X] composer : master branch 
-- [X] namespace   
-- [X] phpinit
-- [X] database connection 
+- [X] use composer
+- [X] use namespace   
+- [X] add phpinit
+- [X] use PDO database connection 
 - [ ] orm  
-- [X] mvc  
-- [X] templating : twig   
-- [X] routing   
-- [ ] validation   
-- [ ] login    
+- [X] follow mvc pattern  
+- [X] use twig as template engine   
+- [X] add routing system      
 - [ ] cache    
-- [ ] enable xdebug 
-- [ ] read credentials from .env file and create .env.dist file 
-- [X] Logger : psr/log 
-- [ ] API
-- [X] Form
-- [ ] PHP Form
-- [ ] One day for symfony 
+- [X] add Logger : psr/log 
+- [ ] implement API
+- [ ] PHP Form & validation  
