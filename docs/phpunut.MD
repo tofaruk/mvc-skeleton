@@ -1,6 +1,7 @@
 # Implement phpunit 
 
 Followed link: [Here](https://phpunit.de/getting-started/phpunit-8.html)
+Followed this how to write test: [Here](https://phpunit.readthedocs.io/en/8.4/)
 
 ### Add phpunit in compuser.json file 
 `composer require --dev phpunit/phpunit ^8`
