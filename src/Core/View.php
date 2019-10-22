@@ -64,7 +64,7 @@ class View
     {
         $trace = debug_backtrace();
       //  var_dump($trace);
-        $controller = str_replace(APP_CONTROLLER_SUFFIX,null,$this->getControllerName($trace));
+        $controller = str_replace(ConfigConstants::APP_CONTROLLER_SUFFIX,null,$this->getControllerName($trace));
         $method = $this->getControllerMethodName($trace);
         return sprintf("%s/%s", $controller, $method);
     }
@@ -94,7 +94,7 @@ class View
         }
         if ($method == null && isset($trace[2]['function'])) {
             $method = $trace[2]['function'];
-            return $method = str_replace(APP_CONTROLLER_METHOD_SUFFIX, '.html.twig', $method);
+            return $method = str_replace(ConfigConstants::APP_CONTROLLER_METHOD_SUFFIX, '.html.twig', $method);
         }
         return $method;
     }

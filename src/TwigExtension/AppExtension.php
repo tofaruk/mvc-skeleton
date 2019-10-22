@@ -12,13 +12,13 @@ class AppExtension extends AbstractExtension
     public function getFunctions()
     {
         return [
-            new TwigFunction('base_url', [$this, 'getAppDomainConst']),
+            new TwigFunction('base_url', [$this, 'getAppHostNameConst']),
             new TwigFunction('app_name', [$this, 'getAppNameConst']),
             new TwigFunction('time_ago', [$this, 'getTimeAgo']),
         ];
     }
 
-    public function getAppDomainConst($suffix = null)
+    public function getAppHostNameConst($suffix = null)
     {
         return APP_HOST_NAME . $suffix;
     }
