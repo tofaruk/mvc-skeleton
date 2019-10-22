@@ -23,11 +23,11 @@ class Log extends AbstractLogger
      */
     public function log($level, $message, array $context = array())
     {
-        $record = [
+/*        $record = [
             'level' => $level,
             'message' => $message,
             'context' => $context,
-        ];
+        ];*/
 
         $path = $this->path . '/' . $level . '.log';
         file_put_contents($path, json_encode([date("Y-m-d H:m:s"),$message, $context]) . PHP_EOL, FILE_APPEND);
