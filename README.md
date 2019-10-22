@@ -3,7 +3,14 @@ This is a MVC framework, will help to start a small application.
 
 ## Controllers 
 You can create a controller class in `src/Controller/` directory which will extends `App\Core\BaseController`. 
-
+#### Example of a controller method 
+```$xslt
+public function indexAction($prams = [], Request $request)
+{
+    $posts = $this->model->getAll();
+    return View::render(['posts' => $posts]);
+}
+```
 __Some conventions of controller__
 * In every controller you have to define at least one method which is `indexAction`.
 * All the public method which has a route need to have Action at the end of method name.
@@ -34,9 +41,20 @@ public function getLastId()
 }
 ```
 ## View
+To create a view file go to `src/View/` and create a directory with the controller name eg. For HomeController view directory name will be Home. 
+Under Home directory you need to create view file for each method name eg. `index.html.twig` for `indexAction` method. 
 
-
-
+__Some conventions of view__ 
+* In the controller method you dont need to specify the view name if you want to keep the method and view name same.
+ 
+#### Example of render  view file from controller method 
+```
+public function addPostAction($prams = [], Request $request)
+{
+    ......
+    return View::render([], 'addPost.html.twig');
+}
+```
 
 ## Routes 
 You can define the Route in `\App\Route\Routes::defineRoutes` method .
@@ -56,27 +74,18 @@ $r->addGroup('/post', function (RouteCollector $r) {
 
 
 ## Other information 
-* You will find log file under this directory `var/log`
+* You will find log file under this directory `var/log/`
+* Run phpunit tests by this command `./vendor/bin/phpunit tests`
 
-
-
-## Run phpunit test 
-`./vendor/bin/phpunit tests`
-
-
-
-
-I will try implement different topics in this project. There will be different git branches for each topics. Everything should be merged in master branch which is working. 
-
-Epic branches will have  more than one branch to check are they working together or not. Remember every time you switch the branch maybe need to run composer install command.  
 
 #### Start the server 
-Run this command in project directory `php -S localhost:8080 -t public/`
+* Run `composer install && composer dump-autoload -o`
+* Run `cp config/config.dist.php config/config.php` 
+* Add database credentials in `config/config.php`
+* Find database with sample data `db/simple-mvc-framework.sql`
+* Run this command in project directory `php -S localhost:8080 -t public/`
 
-## Tips 
-* `composer dump-autoload -o` to generate autoloader 
-
-##TODOS
+##TODOs
 - [X] composer : master branch 
 - [X] namespace   
 - [X] phpinit
