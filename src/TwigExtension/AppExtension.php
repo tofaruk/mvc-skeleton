@@ -20,7 +20,7 @@ class AppExtension extends AbstractExtension
 
     public function getAppDomainConst($suffix = null)
     {
-        return APP_DOMAIN . $suffix;
+        return APP_HOST_NAME . $suffix;
     }
 
     public function getAppNameConst()

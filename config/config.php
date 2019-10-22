@@ -1,6 +1,6 @@
 <?php
 define('APP_NAME', 'Simple MVC Framework');
-define('APP_DOMAIN', 'http://localhost:8080');
+define('APP_HOST_NAME', 'http://localhost:8080');
 define('APP_INNER_DIRECTORY', '/raw-to-advance-php');
 define('APP_ROOT', __DIR__ . '/../src');
 define('APP_VAR', APP_ROOT . '/../var');
@@ -14,6 +14,6 @@ define('APP_Model_SUFFIX', 'Model');
 define('TWIG_DEBUG', true);
 
 define('DB_HOST', '127.0.0.1');
-define('DB_NAME', 'raw-to-advance-php');
+define('DB_NAME', 'simple-mvc-framework');
 define('DB_USER', 'root');
 define('DB_PASS', 'root');
