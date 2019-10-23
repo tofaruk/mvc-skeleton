@@ -28,6 +28,9 @@ You can create a model class in `src/Model/` directory which extends `App/Core/B
 
 __Some conventions of model__ 
 * Mention the main respective database table name in `protected $table = 'table_name';`
+* Use `$this->db` for database connection which will return an instance of `\PDO`
+* Use `$this->log` for error log it will have the instance of `\App\Core\Log`
+ 
 #### Example of a model method 
 ```$xslt
 public function getLastId()
@@ -54,7 +57,7 @@ Under Home directory you need to create view file for each method name eg. `inde
 
 __Some conventions of view__ 
 * In the controller method you dont need to specify the view name if you want to keep the method and view name same.
- 
+* Create at least one twig file (`index.html.twig`) for mandatory indexAction method.   
 #### Example of render  view file from controller method 
 ```
 public function addPostAction($prams = [], Request $request)
@@ -81,7 +84,7 @@ $r->addGroup('/post', function (RouteCollector $r) {
 ```
 
 ## Other information 
-* You will find log file under this directory `var/log/`
+* You will find log files under this directory `var/log/`
 * Run phpunit tests by this command `./vendor/bin/phpunit tests`
 
 ##TODOs
