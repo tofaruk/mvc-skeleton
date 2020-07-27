@@ -1,0 +1,159 @@
+{
+  "status": {
+    "default": "online"
+  },
+  "csid": "34206",
+  "csclass": "Pdmarticlestructure",
+  "_type": {
+    "default": "article"
+  },
+  "_attribute_set": {
+    "default": null
+  },
+  "SortOrder": {
+    "default": "25"
+  },
+  "ParentID": {
+    "default": "6322276"
+  },
+  "sku": {
+    "default": "W97"
+  },
+  "catalog_item2country": {
+    "default": [
+      "germany",
+      "austria",
+      "switzerland",
+      "italy",
+      "spain"
+    ]
+  },
+  "IsDefaultParent": {
+    "default": "nein"
+  },
+  "leadtime": {
+    "default": "2"
+  },
+  "bme_cat_eclass_version": {
+    "default": "ECLASS-6.0"
+  },
+  "bme_cat_eclass_number": {
+    "default": "20140501"
+  },
+  "quantity_scale_signature": {
+    "default": "1|50|100|200|300|500"
+  },
+  "feature_value": {
+    "height_inside": {
+      "default": "180",
+      "german": "180",
+      "swiss": "180",
+      "italian": "180",
+      "spanish": "180",
+      "french": "180"
+    },
+    "execution": {
+      "default": "-"
+    },
+    "maximum_load": {
+      "default": "20000",
+      "german": "20000",
+      "swiss": "20000",
+      "italian": "20000",
+      "spanish": "20000",
+      "french": "20000"
+    },
+    "width_inside": {
+      "default": "260",
+      "german": "260",
+      "swiss": "260",
+      "italian": "260",
+      "spanish": "260",
+      "french": "260"
+    },
+    "color": {
+      "default": "braun"
+    },
+    "length_inside": {
+      "default": "260",
+      "german": "260",
+      "swiss": "260",
+      "italian": "260",
+      "spanish": "260",
+      "french": "260"
+    },
+    "ff_length_area": {
+      "default": "200 mm - 299 mm"
+    },
+    "material": {
+      "default": "Wellpappe"
+    },
+    "quantity_per_pallet": {
+      "default": "450"
+    },
+    "quality": {
+      "default": "1.2",
+      "german": "1.2",
+      "swiss": "1.2",
+      "italian": "1.2",
+      "spanish": "1.2",
+      "french": "1.2"
+    },
+    "ff_cardboard": {
+      "default": "1-wellig"
+    },
+    "kind_of_closure": {
+      "default": "ohne Verschluss"
+    },
+    "cardboard": {
+      "default": "1-wellig"
+    },
+    "variant_table_description": {
+      "default": "Nationaler Versand"
+    },
+    "filter_material": {
+      "default": "Wellpappe"
+    },
+    "filter_color": {
+      "default": "braun"
+    }
+  },
+  "attributes": {
+    "rfProductPackageNavigatorMarker": {
+      "default": [
+        "germany",
+        "austria",
+        "switzerland",
+        "italy",
+        "spain"
+      ]
+    },
+    "can_be_ordered_as_sample": {
+      "default": [
+        "austria",
+        "germany",
+        "italy",
+        "spain",
+        "switzerland"
+      ]
+    }
+  },
+  "multilanguage": {
+    "label": {
+      "default": "W97",
+      "german": "W97",
+      "swiss": "W97",
+      "italian": "W97",
+      "spanish": "W97",
+      "french": "W97"
+    },
+    "bmecat_short_description": {
+      "default": "Wellpapp-Faltkarton, 260 x 260 x 180 mm, 1-wellig, braun",
+      "german": "Wellpapp-Faltkarton, 260 x 260 x 180 mm, 1-wellig, braun",
+      "swiss": "Wellkarton-Faltbox, 260 x 260 x 180 mm, 1-wellig, braun",
+      "italian": "Scatola americana in cartone, 260 x 260 x 180 mm, onda singola, avana",
+      "spanish": "Caja plegable de cart\u00f3n ondulado, 260 x 260 x 180 mm, 1 onda, marr\u00f3n",
+      "french": "Caisse pliante carton ondul\u00e9, 260 x 260 x 180 mm, 1x cannelure, marron"
+    }
+  }
+}

@@ -1,0 +1,1641 @@
+{
+  "status": {
+    "default": "online"
+  },
+  "configuration": {
+    "Label": {
+      "Label": {
+        "german": "Bestell-Nr."
+      }
+    },
+    "ga_suitable_archiv_box": {
+      "Label": {
+        "german": "passender Archiv-Box Karton",
+        "swiss": "passende Archiv-Box Kartonage",
+        "italian": "scatola per archivio adatta",
+        "spanish": "Caja archivadora adecuada",
+        "french": "Caisse carton bo\u00eetes d'archivage recommand\u00e9e"
+      }
+    },
+    "height_inside": {
+      "Label": {
+        "default": "H\u00f6he innen",
+        "german": "H\u00f6he innen",
+        "swiss": "H\u00f6he innen",
+        "italian": "Alt. interna",
+        "spanish": "Altura int.",
+        "french": "Hauteur int."
+      },
+      "Unit": {
+        "default": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        },
+        "german": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        },
+        "swiss": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        },
+        "italian": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        },
+        "spanish": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        },
+        "french": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        }
+      }
+    },
+    "maximum_load": {
+      "Label": {
+        "default": "Belastbarkeit",
+        "german": "Belastbarkeit",
+        "swiss": "Belastbarkeit",
+        "italian": "Portata",
+        "spanish": "Capacidad carga",
+        "french": "Charge admissible"
+      },
+      "Unit": {
+        "default": {
+          "UnformattedMeasure": "Gramm",
+          "UnformattedMeasureToken": "g",
+          "MeasureToken": "g",
+          "Measure": "Gramm",
+          "Conversion": "1"
+        },
+        "german": {
+          "UnformattedMeasure": "Gramm",
+          "UnformattedMeasureToken": "g",
+          "MeasureToken": "g",
+          "Measure": "Gramm",
+          "Conversion": "1"
+        },
+        "swiss": {
+          "UnformattedMeasure": "Gramm",
+          "UnformattedMeasureToken": "g",
+          "MeasureToken": "g",
+          "Measure": "Gramm",
+          "Conversion": "1"
+        },
+        "italian": {
+          "UnformattedMeasure": "Gramm",
+          "UnformattedMeasureToken": "g",
+          "MeasureToken": "g",
+          "Measure": "Gramm",
+          "Conversion": "1"
+        },
+        "spanish": {
+          "UnformattedMeasure": "Gramm",
+          "UnformattedMeasureToken": "g",
+          "MeasureToken": "g",
+          "Measure": "Gramm",
+          "Conversion": "1"
+        },
+        "french": {
+          "UnformattedMeasure": "Gramm",
+          "UnformattedMeasureToken": "g",
+          "MeasureToken": "g",
+          "Measure": "Gramm",
+          "Conversion": "1"
+        }
+      }
+    },
+    "width_outside": {
+      "Label": {
+        "default": "Breite au\u00dfen",
+        "german": "Breite au\u00dfen",
+        "swiss": "Breite aussen",
+        "italian": "Larg. esterna",
+        "spanish": "Ancho ext.",
+        "french": "Largeur ext."
+      },
+      "Unit": {
+        "default": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        },
+        "german": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        },
+        "swiss": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        },
+        "italian": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        },
+        "spanish": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        },
+        "french": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        }
+      }
+    },
+    "width_inside": {
+      "Label": {
+        "default": "Breite innen",
+        "german": "Breite innen",
+        "swiss": "Breite innen",
+        "italian": "Larg. interna",
+        "spanish": "Ancho int.",
+        "french": "Largeur int."
+      },
+      "Unit": {
+        "default": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        },
+        "german": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        },
+        "swiss": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        },
+        "italian": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        },
+        "spanish": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        },
+        "french": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        }
+      }
+    },
+    "diameter": {
+      "Label": {
+        "default": "Durchmesser",
+        "german": "Durchmesser",
+        "swiss": "Durchmesser",
+        "italian": "Diametro",
+        "spanish": "Di\u00e1metro",
+        "french": "Diam\u00e8tre"
+      },
+      "Unit": {
+        "default": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        },
+        "german": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        },
+        "swiss": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        },
+        "italian": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        },
+        "spanish": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        },
+        "french": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        }
+      }
+    },
+    "film_thickness": {
+      "Label": {
+        "default": "Folienst\u00e4rke",
+        "german": "Folienst\u00e4rke",
+        "swiss": "Folienst\u00e4rke",
+        "italian": "Spessore pellicola",
+        "spanish": "Grosor film",
+        "french": "\u00c9paisseur de film"
+      },
+      "Unit": {
+        "default": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        },
+        "german": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        },
+        "swiss": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        },
+        "italian": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        },
+        "spanish": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        },
+        "french": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        }
+      }
+    },
+    "weight": {
+      "Label": {
+        "default": "Gewicht",
+        "german": "Gewicht",
+        "swiss": "Gewicht",
+        "italian": "Peso",
+        "spanish": "Peso",
+        "french": "Poids"
+      },
+      "Unit": {
+        "default": {
+          "UnformattedMeasure": "Gramm",
+          "UnformattedMeasureToken": "g",
+          "MeasureToken": "g",
+          "Measure": "Gramm",
+          "Conversion": "1"
+        },
+        "german": {
+          "UnformattedMeasure": "Gramm",
+          "UnformattedMeasureToken": "g",
+          "MeasureToken": "g",
+          "Measure": "Gramm",
+          "Conversion": "1"
+        },
+        "swiss": {
+          "UnformattedMeasure": "Gramm",
+          "UnformattedMeasureToken": "g",
+          "MeasureToken": "g",
+          "Measure": "Gramm",
+          "Conversion": "1"
+        },
+        "italian": {
+          "UnformattedMeasure": "Gramm",
+          "UnformattedMeasureToken": "g",
+          "MeasureToken": "g",
+          "Measure": "Gramm",
+          "Conversion": "1"
+        },
+        "spanish": {
+          "UnformattedMeasure": "Gramm",
+          "UnformattedMeasureToken": "g",
+          "MeasureToken": "g",
+          "Measure": "Gramm",
+          "Conversion": "1"
+        },
+        "french": {
+          "UnformattedMeasure": "Gramm",
+          "UnformattedMeasureToken": "g",
+          "MeasureToken": "g",
+          "Measure": "Gramm",
+          "Conversion": "1"
+        }
+      }
+    },
+    "grammage_per_m2": {
+      "Label": {
+        "default": "Grammatur",
+        "german": "Grammatur",
+        "swiss": "Grammatur",
+        "italian": "Grammatura",
+        "spanish": "Gramaje",
+        "french": "Grammage"
+      },
+      "Unit": {
+        "default": {
+          "UnformattedMeasure": "Gramm pro Quadratmeter",
+          "UnformattedMeasureToken": "g/m\u00b2",
+          "MeasureToken": "g/m\u00b2",
+          "Measure": "Gramm pro Quadratmeter",
+          "Conversion": "1"
+        },
+        "german": {
+          "UnformattedMeasure": "Gramm pro Quadratmeter",
+          "UnformattedMeasureToken": "g/m\u00b2",
+          "MeasureToken": "g/m\u00b2",
+          "Measure": "Gramm pro Quadratmeter",
+          "Conversion": "1"
+        },
+        "swiss": {
+          "UnformattedMeasure": "Gramm pro Quadratmeter",
+          "UnformattedMeasureToken": "g/m\u00b2",
+          "MeasureToken": "g/m\u00b2",
+          "Measure": "Gramm pro Quadratmeter",
+          "Conversion": "1"
+        },
+        "italian": {
+          "UnformattedMeasure": "Gramm pro Quadratmeter",
+          "UnformattedMeasureToken": "g/m\u00b2",
+          "MeasureToken": "g/m\u00b2",
+          "Measure": "Gramm pro Quadratmeter",
+          "Conversion": "1"
+        },
+        "spanish": {
+          "UnformattedMeasure": "Gramm pro Quadratmeter",
+          "UnformattedMeasureToken": "g/m\u00b2",
+          "MeasureToken": "g/m\u00b2",
+          "Measure": "Gramm pro Quadratmeter",
+          "Conversion": "1"
+        },
+        "french": {
+          "UnformattedMeasure": "Gramm pro Quadratmeter",
+          "UnformattedMeasureToken": "g/m\u00b2",
+          "MeasureToken": "g/m\u00b2",
+          "Measure": "Gramm pro Quadratmeter",
+          "Conversion": "1"
+        }
+      }
+    },
+    "height_outside": {
+      "Label": {
+        "default": "H\u00f6he au\u00dfen",
+        "german": "H\u00f6he au\u00dfen",
+        "swiss": "H\u00f6he aussen",
+        "italian": "Alt. esterna",
+        "spanish": "Altura ext.",
+        "french": "Hauteur ext."
+      },
+      "Unit": {
+        "default": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        },
+        "german": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        },
+        "swiss": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        },
+        "italian": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        },
+        "spanish": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        },
+        "french": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        }
+      }
+    },
+    "maximum_height_packaging": {
+      "Label": {
+        "default": "H\u00f6he Verpackungsgut <br/>max.",
+        "german": "H\u00f6he Verpackungsgut <br/>max.",
+        "swiss": "H\u00f6he Verpackungsgut max.",
+        "italian": "Alt. max. oggetto da imballare",
+        "spanish": "Altura art\u00edculos m\u00e1x.",
+        "french": "Hauteur max. produits emball\u00e9s"
+      },
+      "Unit": {
+        "default": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        },
+        "german": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        },
+        "swiss": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        },
+        "italian": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        },
+        "spanish": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        },
+        "french": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        }
+      }
+    },
+    "length_outside": {
+      "Label": {
+        "default": "L\u00e4nge au\u00dfen",
+        "german": "L\u00e4nge au\u00dfen",
+        "swiss": "L\u00e4nge aussen",
+        "italian": "Lung. esterna",
+        "spanish": "Largo ext.",
+        "french": "Longueur ext."
+      },
+      "Unit": {
+        "default": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        },
+        "german": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        },
+        "swiss": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        },
+        "italian": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        },
+        "spanish": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        },
+        "french": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        }
+      }
+    },
+    "length_inside": {
+      "Label": {
+        "default": "L\u00e4nge innen",
+        "german": "L\u00e4nge innen",
+        "swiss": "L\u00e4nge innen",
+        "italian": "Lung. interna",
+        "spanish": "Largo int.",
+        "french": "Longueur int."
+      },
+      "Unit": {
+        "default": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        },
+        "german": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        },
+        "swiss": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        },
+        "italian": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        },
+        "spanish": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        },
+        "french": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        }
+      }
+    },
+    "length": {
+      "Label": {
+        "default": "Laufl\u00e4nge",
+        "german": "Laufl\u00e4nge",
+        "swiss": "Laufl\u00e4nge",
+        "italian": "Lunghezza",
+        "spanish": "Carrera",
+        "french": "M\u00e9trage lin\u00e9aire"
+      },
+      "Unit": {
+        "default": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        },
+        "german": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        },
+        "swiss": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        },
+        "italian": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        },
+        "spanish": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        },
+        "french": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        }
+      }
+    },
+    "maximum_usable_height": {
+      "Label": {
+        "default": "Nutzh\u00f6he max.",
+        "german": "Nutzh\u00f6he max.",
+        "swiss": "Nutzh\u00f6he max.",
+        "italian": "Altezza utile max.",
+        "spanish": "Altura \u00fatil m\u00e1x.",
+        "french": "Hauteur utile max."
+      },
+      "Unit": {
+        "default": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        },
+        "german": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        },
+        "swiss": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        },
+        "italian": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        },
+        "spanish": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        },
+        "french": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        }
+      }
+    },
+    "maximum_usable_length": {
+      "Label": {
+        "default": "Nutzl\u00e4nge max.",
+        "german": "Nutzl\u00e4nge max.",
+        "swiss": "Nutzl\u00e4nge max.",
+        "italian": "Lung. utile max.",
+        "spanish": "Largo \u00fatil m\u00e1x.",
+        "french": "Longueur utile max."
+      },
+      "Unit": {
+        "default": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        },
+        "german": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        },
+        "swiss": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        },
+        "italian": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        },
+        "spanish": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        },
+        "french": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        }
+      }
+    },
+    "tear_strength": {
+      "Label": {
+        "default": "Rei\u00dffestigkeit",
+        "german": "Rei\u00dffestigkeit",
+        "swiss": "Reissfestigkeit",
+        "italian": "Resistenza a strappi",
+        "spanish": "Resist. rotura",
+        "french": "R\u00e9sistance \u00e0 la d\u00e9chirure"
+      },
+      "Unit": {
+        "default": {
+          "UnformattedMeasure": "Newton",
+          "UnformattedMeasureToken": "N",
+          "MeasureToken": "N",
+          "Measure": "Newton",
+          "Conversion": "1"
+        },
+        "german": {
+          "UnformattedMeasure": "Newton",
+          "UnformattedMeasureToken": "N",
+          "MeasureToken": "N",
+          "Measure": "Newton",
+          "Conversion": "1"
+        },
+        "swiss": {
+          "UnformattedMeasure": "Newton",
+          "UnformattedMeasureToken": "N",
+          "MeasureToken": "N",
+          "Measure": "Newton",
+          "Conversion": "1"
+        },
+        "italian": {
+          "UnformattedMeasure": "Newton",
+          "UnformattedMeasureToken": "N",
+          "MeasureToken": "N",
+          "Measure": "Newton",
+          "Conversion": "1"
+        },
+        "spanish": {
+          "UnformattedMeasure": "Newton",
+          "UnformattedMeasureToken": "N",
+          "MeasureToken": "N",
+          "Measure": "Newton",
+          "Conversion": "1"
+        },
+        "french": {
+          "UnformattedMeasure": "Newton",
+          "UnformattedMeasureToken": "N",
+          "MeasureToken": "N",
+          "Measure": "Newton",
+          "Conversion": "1"
+        }
+      }
+    },
+    "max_role_width_in_cm": {
+      "Label": {
+        "default": "Rollenbreite max.",
+        "german": "Rollenbreite max.",
+        "swiss": "Rollenbreite max.",
+        "italian": "Larg. max. rotolo",
+        "spanish": "Ancho rollo m\u00e1x.",
+        "french": "Largeur de rouleau max."
+      },
+      "Unit": {
+        "default": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        },
+        "german": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        },
+        "swiss": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        },
+        "italian": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        },
+        "spanish": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        },
+        "french": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        }
+      }
+    },
+    "roll_diameter": {
+      "Label": {
+        "default": "Rollendurchmesser",
+        "german": "Rollendurchmesser",
+        "swiss": "Rollendurchmesser",
+        "italian": "Diametro rotolo",
+        "spanish": "Di\u00e1metro rollo",
+        "french": "Diam\u00e8tre de rouleau"
+      },
+      "Unit": {
+        "default": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        },
+        "german": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        },
+        "swiss": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        },
+        "italian": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        },
+        "spanish": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        },
+        "french": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        }
+      }
+    },
+    "width_for_max_weld_in_mm": {
+      "Label": {
+        "default": "Schwei\u00dfbreite <br/>bis max.",
+        "german": "Schwei\u00dfbreite <br/>bis max.",
+        "swiss": "Schweissbreite bis max.",
+        "italian": "Cordone di saldatura largo fino a max.",
+        "spanish": "Ancho sellado m\u00e1x.",
+        "french": "Largeur de soudage max."
+      },
+      "Unit": {
+        "default": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        },
+        "german": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        },
+        "swiss": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        },
+        "italian": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        },
+        "spanish": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        },
+        "french": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        }
+      }
+    },
+    "thickness": {
+      "Label": {
+        "default": "St\u00e4rke",
+        "german": "St\u00e4rke",
+        "swiss": "St\u00e4rke",
+        "italian": "Spessore",
+        "spanish": "Grosor",
+        "french": "\u00c9paisseur"
+      },
+      "Unit": {
+        "default": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        },
+        "german": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        },
+        "swiss": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        },
+        "italian": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        },
+        "spanish": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        },
+        "french": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        }
+      }
+    },
+    "maximum_load_dynamic": {
+      "Label": {
+        "default": "Belastbarkeit <br/>dynamisch",
+        "german": "Belastbarkeit <br/>dynamisch",
+        "swiss": "Belastbarkeit dynamisch",
+        "italian": "Carico ammesso dinamico",
+        "spanish": "Capac. carga din\u00e1mica",
+        "french": "Charge admissible dynamique"
+      },
+      "Unit": {
+        "default": {
+          "UnformattedMeasure": "Gramm",
+          "UnformattedMeasureToken": "g",
+          "MeasureToken": "g",
+          "Measure": "Gramm",
+          "Conversion": "1"
+        },
+        "german": {
+          "UnformattedMeasure": "Gramm",
+          "UnformattedMeasureToken": "g",
+          "MeasureToken": "g",
+          "Measure": "Gramm",
+          "Conversion": "1"
+        },
+        "swiss": {
+          "UnformattedMeasure": "Gramm",
+          "UnformattedMeasureToken": "g",
+          "MeasureToken": "g",
+          "Measure": "Gramm",
+          "Conversion": "1"
+        },
+        "italian": {
+          "UnformattedMeasure": "Gramm",
+          "UnformattedMeasureToken": "g",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        },
+        "spanish": {
+          "UnformattedMeasure": "Gramm",
+          "UnformattedMeasureToken": "g",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        },
+        "french": {
+          "UnformattedMeasure": "Gramm",
+          "UnformattedMeasureToken": "g",
+          "MeasureToken": "g",
+          "Measure": "Gramm",
+          "Conversion": "1"
+        }
+      }
+    },
+    "content_in_l": {
+      "Label": {
+        "default": "Inhalt",
+        "german": "Inhalt",
+        "swiss": "Inhalt",
+        "italian": "Contenuto",
+        "spanish": "Contenido",
+        "french": "Contenu"
+      },
+      "Unit": {
+        "default": {
+          "UnformattedMeasure": "Liter",
+          "UnformattedMeasureToken": "l",
+          "MeasureToken": "l",
+          "Measure": "Liter",
+          "Conversion": "1"
+        },
+        "german": {
+          "UnformattedMeasure": "Liter",
+          "UnformattedMeasureToken": "l",
+          "MeasureToken": "l",
+          "Measure": "Liter",
+          "Conversion": "1"
+        },
+        "swiss": {
+          "UnformattedMeasure": "Liter",
+          "UnformattedMeasureToken": "l",
+          "MeasureToken": "l",
+          "Measure": "Liter",
+          "Conversion": "1"
+        },
+        "italian": {
+          "UnformattedMeasure": "Liter",
+          "UnformattedMeasureToken": "l",
+          "MeasureToken": "l",
+          "Measure": "Liter",
+          "Conversion": "1"
+        },
+        "spanish": {
+          "UnformattedMeasure": "Liter",
+          "UnformattedMeasureToken": "l",
+          "MeasureToken": "l",
+          "Measure": "Liter",
+          "Conversion": "1"
+        },
+        "french": {
+          "UnformattedMeasure": "Liter",
+          "UnformattedMeasureToken": "l",
+          "MeasureToken": "l",
+          "Measure": "Liter",
+          "Conversion": "1"
+        }
+      }
+    },
+    "role_width": {
+      "Label": {
+        "default": "Rollenbreite",
+        "german": "Rollenbreite",
+        "swiss": "Rollenbreite",
+        "italian": "Larg. rotolo",
+        "spanish": "Ancho rollo",
+        "french": "Largeur de rouleau"
+      },
+      "Unit": {
+        "default": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        },
+        "german": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        },
+        "swiss": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        },
+        "italian": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        },
+        "spanish": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        },
+        "french": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        }
+      }
+    },
+    "foam_thickness": {
+      "Label": {
+        "default": "Schaumst\u00e4rke",
+        "german": "Schaumst\u00e4rke",
+        "swiss": "Schaumst\u00e4rke",
+        "italian": "Spessore espanso",
+        "spanish": "Grosor espuma",
+        "french": "\u00c9paisseur de mousse"
+      },
+      "Unit": {
+        "default": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        },
+        "german": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        },
+        "swiss": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        },
+        "italian": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        },
+        "spanish": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        },
+        "french": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        }
+      }
+    },
+    "depth_outside": {
+      "Label": {
+        "default": "Tiefe au\u00dfen",
+        "german": "Tiefe au\u00dfen",
+        "swiss": "Tiefe aussen",
+        "italian": "Profondit\u00e0 esterna",
+        "spanish": "Profund. ext.",
+        "french": "Profondeur ext."
+      },
+      "Unit": {
+        "default": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        },
+        "german": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        },
+        "swiss": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        },
+        "italian": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        },
+        "spanish": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        },
+        "french": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        }
+      }
+    },
+    "depth_inside": {
+      "Label": {
+        "default": "Tiefe innen",
+        "german": "Tiefe innen",
+        "swiss": "Tiefe innen",
+        "italian": "Profondit\u00e0 interna",
+        "spanish": "Profund. int.",
+        "french": "Profondeur int."
+      },
+      "Unit": {
+        "default": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        },
+        "german": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        },
+        "swiss": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        },
+        "italian": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        },
+        "spanish": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        },
+        "french": {
+          "UnformattedMeasure": "Milimeter",
+          "UnformattedMeasureToken": "mm",
+          "MeasureToken": "mm",
+          "Measure": "Milimeter",
+          "Conversion": "1"
+        }
+      }
+    },
+    "volume": {
+      "Label": {
+        "default": "Volumen",
+        "german": "Volumen",
+        "swiss": "Volumen",
+        "italian": "Volume",
+        "spanish": "Volumen",
+        "french": "Volume"
+      },
+      "Unit": {
+        "default": {
+          "UnformattedMeasure": "Liter",
+          "UnformattedMeasureToken": "l",
+          "MeasureToken": "l",
+          "Measure": "Liter",
+          "Conversion": "1"
+        },
+        "german": {
+          "UnformattedMeasure": "Liter",
+          "UnformattedMeasureToken": "l",
+          "MeasureToken": "l",
+          "Measure": "Liter",
+          "Conversion": "1"
+        },
+        "swiss": {
+          "UnformattedMeasure": "Liter",
+          "UnformattedMeasureToken": "l",
+          "MeasureToken": "l",
+          "Measure": "Liter",
+          "Conversion": "1"
+        },
+        "italian": {
+          "UnformattedMeasure": "Liter",
+          "UnformattedMeasureToken": "l",
+          "MeasureToken": "l",
+          "Measure": "Liter",
+          "Conversion": "1"
+        },
+        "spanish": {
+          "UnformattedMeasure": "Liter",
+          "UnformattedMeasureToken": "l",
+          "MeasureToken": "l",
+          "Measure": "Liter",
+          "Conversion": "1"
+        },
+        "french": {
+          "UnformattedMeasure": "Liter",
+          "UnformattedMeasureToken": "l",
+          "MeasureToken": "l",
+          "Measure": "Liter",
+          "Conversion": "1"
+        }
+      }
+    }
+  },
+  "csid": "32989",
+  "csclass": "Pdmarticlestructure",
+  "_type": {
+    "default": "simple"
+  },
+  "_attribute_set": {
+    "default": null
+  },
+  "SortOrder": {
+    "default": "5"
+  },
+  "ParentID": {
+    "default": "100020"
+  },
+  "sku": {
+    "default": "546352"
+  },
+  "cross_selling_customers": {
+    "default": [
+      "546362",
+      "279672",
+      "1302170419"
+    ]
+  },
+  "cross_selling_supplement": {
+    "default": [
+      "6322053",
+      "1206030102"
+    ]
+  },
+  "catalog_item2country": {
+    "default": [
+      "germany",
+      "austria",
+      "switzerland",
+      "italy",
+      "spain"
+    ]
+  },
+  "images": {
+    "default": [
+      {
+        "url": "https://s3.eu-central-1.amazonaws.com/ratioform-spryker-stage-images/catalog/98087.jpg",
+        "mdate": "2019-04-24 14:49:16",
+        "cdate": "2019-04-24 14:49:16",
+        "fileid": "98087",
+        "filename": "Archiv_Box_gr_h01.jpg",
+        "description": {
+          "default": "Praktische Archiv-Boxen f\u00fcr Drucksachen \u2013 in diversen Ausf\u00fchrungen.",
+          "german": "Praktische Archiv-Boxen f\u00fcr Drucksachen \u2013 in diversen Ausf\u00fchrungen.",
+          "swiss": "Praktische Archiv-Boxen f\u00fcr Drucksachen \u2013 in diversen Ausf\u00fchrungen.",
+          "italian": "Pratiche scatole di archiviazione per stampe, in diverse varianti.",
+          "spanish": "Pr\u00e1cticas cajas de archivo para documentaci\u00f3n, en diferentes modelos.",
+          "french": "Bo\u00eetes d\u2019archivage pratiques pour les documents imprim\u00e9s \u2013 diverses versions existantes."
+        }
+      },
+      {
+        "url": "https://s3.eu-central-1.amazonaws.com/ratioform-spryker-stage-images/catalog/98090.jpg",
+        "mdate": "2019-04-24 15:06:40",
+        "cdate": "2019-04-24 15:06:40",
+        "fileid": "98090",
+        "filename": "Archiv_Box_z01.jpg",
+        "description": {
+          "default": "Passend f\u00fcr unsere Archiv-Box Kartons (Bestell-Nr. avx1/avx2/avx3).",
+          "german": "Passend f\u00fcr unsere Archiv-Box Kartons (Bestell-Nr. avx1/avx2/avx3).",
+          "swiss": "Passend f\u00fcr unsere Archiv-Boxen (Bestell-Nr. avx1/avx2/avx3).",
+          "italian": "Adatte per le nostre scatole per archivio (Cod. Art. avx1/avx2/avx3).",
+          "spanish": "Ideal para cajas de archivo (N\u00fam.\u00a0art. avx1/avx2/avx3).",
+          "french": "Convient \u00e0 nos bo\u00eetes d'archivage (n\u00b0 de commande avx1/avx2/avx3)."
+        }
+      }
+    ]
+  },
+  "IsDefaultParent": {
+    "default": "ja"
+  },
+  "quantity_scale_signature": {
+    "default": "1|10|50|100|500"
+  },
+  "attributes": {
+    "rfProductPrice": {
+      "default": [
+        "switzerland"
+      ]
+    }
+  },
+  "multilanguage": {
+    "label": {
+      "default": "Archiv-Box farbig",
+      "german": "Archiv-Box farbig",
+      "swiss": "Archiv-Box farbig",
+      "italian": "Scatole archivio a colori",
+      "spanish": "Archivador de documentos A4 de colores",
+      "french": "Bo\u00eete d'archivage couleur"
+    },
+    "description": {
+      "default": "Aufklappbare Archiv-Box in 2 Breiten und 3 Farben zum Organisieren und Verwalten der B\u00fcro-Altablage. Mit Beschriftungsfeldern auf Deckel und R\u00fccken \u2013 so behalten Sie die \u00dcbersicht.",
+      "german": "Aufklappbare Archiv-Box in 2 Breiten und 3 Farben zum Organisieren und Verwalten der B\u00fcro-Altablage. Mit Beschriftungsfeldern auf Deckel und R\u00fccken \u2013 so behalten Sie die \u00dcbersicht.",
+      "swiss": "Aufklappbare Archiv-Box in 2 Breiten und 3 Farben zum Organisieren und Verwalten der B\u00fcro-Altablage. Mit Beschriftungsfeldern auf Deckel und R\u00fccken \u2013 so behalten Sie die \u00dcbersicht.",
+      "italian": "Scatole archivio a colori in due formati diversi e 3 colori per organizzare e gestire la documentazione d'ufficio, con spazio per le scritte sul coperchio e sul dorso.",
+      "spanish": "Resistentes cajas de archivo con zona para rotular en lomo y tapa. Disponibles en 2 anchos de lomo y 3 colores distintos.",
+      "french": "Bo\u00eete d'archivage \u00e0 rabat disponible en 2 largeurs et 3 couleurs, pour l'organisation, la gestion et le classement des documents au bureau. Facile \u00e0 rep\u00e9rer\u00a0: indexation au dos et sur le couvercle."
+    },
+    "text_enumeration_additional": {
+      "default": "<b>Material:</b><ul><li>1-wellige Wellpappe</li></ul>",
+      "german": "<b>Material:</b><ul><li>1-wellige Wellpappe</li></ul>",
+      "swiss": "<b>Material:</b><ul><li>1-welliger Wellkarton </li></ul>",
+      "italian": "<b>Materiale:</b><ul><li>Cartone a onda singola </li></ul><br/>\r\nLa conservazione dei documenti \u00e8 facilitata dalla superficie interamente scrivibile. Lo stoccaggio delle scatole vuote ottimale grazie al basso spessore delle scatole smontate. Le scatole archivio a colori sono la soluzione ideale per risparmiare sulle spese di cancelleria ed ottenere un archivio funzionale ed ordinato. Una volta svuotate, \u00e8 possibile riutilizzare le scatole per un utilizzo futuro riducendo ulteriormente costi ed ingombri.",
+      "spanish": "<b>Material:</b><ul><li>Cart\u00f3n ondulado de 1 onda </li></ul>",
+      "french": "<b>Mat\u00e9riau\u00a0:</b><ul><li>carton ondul\u00e9 simple cannelure </li></ul>"
+    },
+    "text_enumeration": {
+      "default": "<b>Vorteile:</b><ul><li>passen exakt in die Archiv-Box-Kartons</li></ul>",
+      "german": "<b>Vorteile:</b><ul><li>passen exakt in die Archiv-Box-Kartons</li></ul>",
+      "swiss": "<b>Vorteile:</b><ul><li>passen exakt in die Archiv-Box-Kartonagen</li></ul>",
+      "italian": "<b>Vantaggi:</b><ul><li>Perfette da conservare nei cartoni a colori  per archiviazione</li></ul>",
+      "spanish": "<b>Ventajas:</b><ul><li>Suministrado en plano: ahorra espacio de almacenaje </li><li>Ideales como complemento a las cajas Archiv-Box </li></ul>",
+      "french": "<b>Avantages\u00a0:</b><ul><li>s'embo\u00eete exactement dans les caisses carton pour bo\u00eete d'archivage</li></ul>"
+    },
+    "text_adaptation": {
+      "default": "Ideal f\u00fcr alle DIN-A4-Unterlagen, Dokumente, Ordnerinhalte, Ablage.",
+      "german": "Ideal f\u00fcr alle DIN-A4-Unterlagen, Dokumente, Ordnerinhalte, Ablage.",
+      "swiss": "Ideal f\u00fcr alle DIN-A4-Unterlagen, Dokumente, Ordnerinhalte, Ablage.",
+      "italian": "Tieni tutto sott'occhio! Ideali per tutti i documenti formato A4, documenti in genere, contenuti di raccoglitori, documentazione ecc...",
+      "spanish": "Recomendado para: documentos y soportes A4.",
+      "french": "Solution id\u00e9ale pour tous les dossiers, documents, contenus de classeurs, etc. au format DIN A4."
+    },
+    "price_base_text": {
+      "default": "Euro je St\u00fcck",
+      "german": "Euro je St\u00fcck",
+      "swiss": "CHF je St\u00fcck",
+      "italian": "EUR/pezzo",
+      "spanish": "EUR/unidad",
+      "french": "CHF/unit\u00e9"
+    }
+  },
+  "features": [
+    {
+      "default": {
+        "feature_key": "internal_dimensions_l_x_w_x_h_in_mm",
+        "is_visible": 1,
+        "is_mandatory": 0,
+        "is_filter_on_product_page": 0
+      }
+    },
+    {
+      "default": {
+        "feature_key": "color",
+        "is_visible": 1,
+        "is_mandatory": 1,
+        "is_filter_on_product_page": 1
+      }
+    },
+    {
+      "default": {
+        "feature_key": "ga_suitable_archiv_box",
+        "is_visible": 1,
+        "is_mandatory": 0,
+        "is_filter_on_product_page": 0
+      }
+    }
+  ]
+}

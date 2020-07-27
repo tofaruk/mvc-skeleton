@@ -13,6 +13,7 @@ class Routes
     public static function defineRoutes(RouteCollector $r)
     {
         $r->addRoute('GET', '/', 'App\Controller\HomeController::indexAction');
+        $r->addRoute('GET', '/home/json', 'App\Controller\HomeController::jsonAction');
 
 
         $r->addGroup('/post', function (RouteCollector $r) {

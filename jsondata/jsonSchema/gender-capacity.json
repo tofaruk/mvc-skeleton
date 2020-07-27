@@ -1,0 +1,64 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "required": [
+    "results"
+  ],
+  "additionalProperties": true,
+  "properties": {
+    "results": {
+      "$id": "#/properties/results",
+      "type": "array",
+      "additionalItems": true,
+      "items": {
+        "oneOf": [
+          {
+            "$ref": "#/definitions/person"
+          },
+          {
+            "$ref": "#/definitions/company"
+          }
+        ]
+      }
+    }
+  },
+  "definitions": {
+    "person": {
+      "type": "object",
+      "required": [
+        "name",
+        "testA"
+      ],
+      "properties": {
+        "name": {
+          "type": "string",
+          "enum": [
+            "A"
+          ]
+        },
+        "testA": {
+          "type": "string"
+        }
+      }
+    },
+    "company": {
+      "type": "object",
+      "required": [
+        "name",
+        "testB"
+      ],
+      "properties": {
+        "name": {
+          "type": "string",
+          "enum": [
+            "B"
+          ]
+        },
+        "testB": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

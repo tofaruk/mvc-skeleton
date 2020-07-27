@@ -1,0 +1,140 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "title": "Abstract Product validation schema",
+  "required": [
+    "status",
+    "configuration",
+    "ParentID",
+    "sku",
+    "images",
+    "features"
+  ],
+  "properties": {
+    "status": {
+      "description": "status should be an array",
+      "type": "array",
+      "required": [
+        "default"
+      ],
+      "properties": {
+        "default": {
+          "type": "string"
+        }
+      }
+    },
+    "configuration": {
+      "description": "configuration should be an array of attribute, Each attribute can be validated separately",
+      "type": "array",
+      "minItems": 1
+    },
+    "ParentID": {
+      "description": "ParentID should be an array, it contains the category key in default",
+      "type": "array",
+      "required": [
+        "default"
+      ],
+      "properties": {
+        "default": {
+          "type": "string",
+          "allOf": [
+            {
+              "$ref": "#/definitions/value-should-be-only-numbers"
+            }
+          ]
+        }
+      }
+    },
+    "sku": {
+      "description": "sku should be an array, it contains the main identifier of a product",
+      "type": "array",
+      "required": [
+        "default"
+      ],
+      "properties": {
+        "default": {
+          "type": "string"
+        }
+      }
+    },
+    "catalog_item2country": {
+      "description": "catalog_item2country should be an array, it contains the allowed countries for the product",
+      "type": "array",
+      "required": [
+        "default"
+      ],
+      "properties": {
+        "default": {
+          "type": "array"
+        }
+      }
+    },
+    "images": {
+      "description": "images should be an array, it contains the image properties for the product, at least one image is required",
+      "type": "array",
+      "required": [
+        "default"
+      ],
+      "properties": {
+        "default": {
+          "type": "array",
+          "minItems": 1
+        }
+      }
+    },
+    "multilanguage": {
+      "description": "multilanguage should be an array, it contains all description for the product, which is moslty showing in PDP",
+      "type": "array",
+      "required": [
+        "label",
+        "price_base_text"
+      ],
+      "properties": {
+        "label": {
+          "type": "array",
+          "minItems": 1
+        },
+        "description": {
+          "type": "array",
+          "minItems": 1
+        },
+        "price_base_text": {
+          "type": "array",
+          "minItems": 1
+        }
+      }
+    },
+    "features": {
+      "description": "features should be an array, the original values for feature will be delivered by variant",
+      "type": "array",
+      "items": {
+        "anyOf": [
+          {
+            "type": "array",
+            "required": [
+              "default"
+            ],
+            "properties": {
+              "default": {
+                "type": "array",
+                "required": [
+                  "feature_key",
+                  "is_visible",
+                  "is_mandatory",
+                  "is_filter_on_product_page"
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "definitions": {
+    "value-should-be-zero-or-one": {
+      "pattern": "^(0|1)$"
+    },
+    "value-should-be-only-numbers": {
+      "pattern": "^\\d+$"
+    }
+  }
+}

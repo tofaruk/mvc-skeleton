@@ -1,0 +1,130 @@
+{
+  "status": {
+    "default": "online"
+  },
+  "csid": "33865",
+  "csclass": "Pdmarticlestructure",
+  "_type": {
+    "default": "article"
+  },
+  "_attribute_set": {
+    "default": null
+  },
+  "SortOrder": {
+    "default": "0"
+  },
+  "ParentID": {
+    "default": "546352"
+  },
+  "sku": {
+    "default": "alx1"
+  },
+  "catalog_item2country": {
+    "default": [
+      "germany",
+      "austria",
+      "switzerland",
+      "italy",
+      "spain"
+    ]
+  },
+  "IsDefaultParent": {
+    "default": "ja"
+  },
+  "leadtime": {
+    "default": "2"
+  },
+  "images": {
+    "default": [
+      {
+        "url": "https://s3.eu-central-1.amazonaws.com/ratioform-spryker-stage-images/catalog/98081.jpg",
+        "mdate": "2019-04-24 14:49:09",
+        "cdate": "2019-04-24 14:49:09",
+        "fileid": "98081",
+        "filename": "Archiv_Box_alx1.jpg"
+      }
+    ]
+  },
+  "bme_cat_eclass_version": {
+    "default": "ECLASS-6.0"
+  },
+  "bme_cat_eclass_number": {
+    "default": "24290902"
+  },
+  "quantity_scale_signature": {
+    "default": "1|10|50|100|500"
+  },
+  "feature_value": {
+    "height_inside": {
+      "default": "240",
+      "german": "240",
+      "swiss": "240",
+      "italian": "240",
+      "spanish": "240",
+      "french": "240"
+    },
+    "width_inside": {
+      "default": "94",
+      "german": "94",
+      "swiss": "94",
+      "italian": "94",
+      "spanish": "94",
+      "french": "94"
+    },
+    "color": {
+      "default": "pink"
+    },
+    "length_inside": {
+      "default": "330",
+      "german": "330",
+      "swiss": "330",
+      "italian": "330",
+      "spanish": "330",
+      "french": "330"
+    },
+    "material": {
+      "default": "Wellpappe"
+    },
+    "kind_of_closure": {
+      "default": "Steckverschluss"
+    },
+    "cardboard": {
+      "default": "1-wellig"
+    },
+    "ga_suitable_archiv_box": {
+      "default": "avx1, avx2, avx3",
+      "german": "avx1, avx2, avx3",
+      "swiss": "avx1, avx2, avx3",
+      "italian": "avx1, avx2, avx3",
+      "spanish": "avx1, avx2, avx3",
+      "french": "avx1, avx2, avx3"
+    },
+    "filter_material": {
+      "default": "Wellpappe"
+    },
+    "filter_color": {
+      "default": "pink"
+    }
+  },
+  "attributes": {
+    "can_be_ordered_as_sample": {
+      "default": [
+        "austria",
+        "germany",
+        "italy",
+        "spain",
+        "switzerland"
+      ]
+    }
+  },
+  "multilanguage": {
+    "bmecat_short_description": {
+      "default": "Farbige Archiv-Box, pink, 330 x 94 x 240 mm, pass. Karton avx1, avx2, avx3",
+      "german": "Farbige Archiv-Box, pink, 330 x 94 x 240 mm, pass. Karton avx1, avx2, avx3",
+      "swiss": "Farbige Archiv-Box, pink, 330 x 94 x 240 mm, pass. Box avx1, avx2, avx3",
+      "italian": "Scatola archivio, rosa, 330 x 94 x 240 mm, per scatole avx1, avx2, avx3",
+      "spanish": "Caja de archivo en color, rosa, 330 x 94 x 240 mm, cajas avx1, avx2, avx3",
+      "french": "Bo\u00eete d'archivage, rose, 330 x 94 x 240 mm, pour bo\u00eetes avx1, avx2, avx3"
+    }
+  }
+}

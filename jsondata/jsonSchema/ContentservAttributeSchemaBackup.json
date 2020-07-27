@@ -1,0 +1,132 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "title": "Attribute validation schema",
+  "default": {},
+  "required": [
+    "code",
+    "Label",
+    "Name"
+  ],
+  "additionalProperties": true,
+  "properties": {
+    "code": {
+      "$id": "#/properties/code",
+      "type": "string",
+      "title": "The code schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": ""
+    },
+    "Label": {
+      "$id": "#/properties/Label",
+      "type": "array",
+      "title": "The Label schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "required": [
+        "default"
+      ],
+      "additionalProperties": true,
+      "properties": {
+        "default": {
+          "$id": "#/properties/Label/properties/default",
+          "type": "string",
+          "title": "The default schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "german": {
+          "$id": "#/properties/Label/properties/german",
+          "type": "string",
+          "title": "The german schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "swiss": {
+          "$id": "#/properties/Label/properties/swiss",
+          "type": "string",
+          "title": "The swiss schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "italian": {
+          "$id": "#/properties/Label/properties/italian",
+          "type": "string",
+          "title": "The italian schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "spanish": {
+          "$id": "#/properties/Label/properties/spanish",
+          "type": "string",
+          "title": "The spanish schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "french": {
+          "$id": "#/properties/Label/properties/french",
+          "type": "string",
+          "title": "The french schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        }
+      }
+    },
+    "Name": {
+      "$id": "#/properties/Name",
+      "type": "array",
+      "title": "The Name schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "required": [
+        "default"
+      ],
+      "additionalProperties": true,
+      "properties": {
+        "default": {
+          "$id": "#/properties/Name/properties/default",
+          "type": "string",
+          "title": "The default schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "german": {
+          "$id": "#/properties/Name/properties/german",
+          "type": "string",
+          "title": "The german schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "swiss": {
+          "$id": "#/properties/Name/properties/swiss",
+          "type": "string",
+          "title": "The swiss schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "italian": {
+          "$id": "#/properties/Name/properties/italian",
+          "type": "string",
+          "title": "The italian schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "spanish": {
+          "$id": "#/properties/Name/properties/spanish",
+          "type": "string",
+          "title": "The spanish schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "french": {
+          "$id": "#/properties/Name/properties/french",
+          "type": "string",
+          "title": "The french schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        }
+      }
+    }
+  }
+}

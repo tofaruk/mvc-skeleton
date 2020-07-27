@@ -1,0 +1,84 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "title": "Concrete Product validation schema",
+  "required": [
+    "status",
+    "ParentID",
+    "sku",
+    "multilanguage",
+    "feature_value"
+  ],
+  "properties": {
+    "status": {
+      "description": "status should be an array",
+      "type": "array",
+      "required": [
+        "default"
+      ],
+      "properties": {
+        "default": {
+          "type": "string"
+        }
+      }
+    },
+    "ParentID": {
+      "description": "ParentID should be an array, it contains the category key in default",
+      "type": "array",
+      "required": [
+        "default"
+      ],
+      "properties": {
+        "default": {
+          "type": "string",
+          "allOf": [
+            {
+              "$ref": "#/definitions/value-should-be-only-numbers"
+            }
+          ]
+        }
+      }
+    },
+    "sku": {
+      "description": "sku should be an array, it contains the main identifier of a product",
+      "type": "array",
+      "required": [
+        "default"
+      ],
+      "properties": {
+        "default": {
+          "type": "string"
+        }
+      }
+    },
+    "multilanguage": {
+      "description": "multilanguage should be an array, it contains all description for the product, which is mostly showing on PDP",
+      "type": "array",
+      "required": [
+        "label",
+        "bmecat_short_description"
+      ],
+      "additionalProperties": true,
+      "properties": {
+        "label": {
+          "type": "object",
+          "required": [
+            "default",
+            "german",
+            "swiss",
+            "italian",
+            "spanish",
+            "french"
+          ]
+        }
+      }
+    }
+  },
+  "definitions": {
+    "value-should-be-zero-or-one": {
+      "pattern": "^(0|1)$"
+    },
+    "value-should-be-only-numbers": {
+      "pattern": "^\\d+$"
+    }
+  }
+}

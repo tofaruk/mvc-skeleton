@@ -1,0 +1,30 @@
+{
+  "code": "ga_height_of_filling_from_to",
+  "prefix": "feature_value",
+  "type": "text",
+  "default_value": "",
+  "options": [],
+  "language_dependent": true,
+  "csid": "433",
+  "csclass": "Pdmarticleconfiguration",
+  "Label": {
+    "default": "F\u00fcllh\u00f6he [mm]",
+    "german": "F\u00fcllh\u00f6he [mm]",
+    "swiss": "F\u00fcllh\u00f6he [mm]",
+    "italian": "Alt. di riempimento [mm]",
+    "spanish": "Altura llenado [mm]",
+    "french": "Hauteur de remplissage [mm]"
+  },
+  "Name": {
+    "default": "F\u00fcllh\u00f6he [mm]",
+    "german": "F\u00fcllh\u00f6he [mm]",
+    "swiss": "F\u00fcllh\u00f6he [mm]",
+    "italian": "Alt. di riempimento [mm]",
+    "spanish": "Altura llenado [mm]"
+  },
+  "sku": {
+    "default": "433"
+  },
+  "is_factfinder_feature": "0",
+  "is_filter_on_product_page_default": "0"
+}

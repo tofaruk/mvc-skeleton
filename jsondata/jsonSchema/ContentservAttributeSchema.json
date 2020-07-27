@@ -1,0 +1,46 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "title": "Attribute validation schema",
+  "required": [
+    "code",
+    "type",
+    "language_dependent",
+    "Label",
+    "is_factfinder_feature"
+  ],
+  "properties": {
+    "code": {
+      "description": "code should be string",
+      "type": "string"
+    },
+    "language_dependent": {
+      "description": "language_dependent should be boolean",
+      "type": "boolean"
+    },
+    "Label": {
+      "description": "Label should be an array",
+      "type": "array",
+      "required": [
+        "default",
+        "german",
+        "swiss",
+        "italian",
+        "spanish"
+      ]
+    },
+    "is_factfinder_feature": {
+      "description": "is_factfinder_feature should be string",
+      "type": "string",
+      "allOf": [
+        {
+          "$ref": "#/definitions/value-should-be-zero-or-one"
+        }
+      ]
+    }
+  },
+  "definitions": {
+    "value-should-be-zero-or-one": {
+      "pattern": "^(0|1)$"
+    }
+  }
+}

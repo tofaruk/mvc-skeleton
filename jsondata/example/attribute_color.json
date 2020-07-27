@@ -1,0 +1,48 @@
+{
+  "code": "color",
+  "prefix": "feature_value",
+  "type": "select",
+  "default_value": "",
+  "options": {
+    "1-farbiger Druck": {
+      "default": "1-farbiger Druck",
+      "german": "1-farbiger Druck",
+      "swiss": "1-farbiger Druck",
+      "italian": "Stampa monocromatica",
+      "spanish": "Impresi\u00f3n a 1 color",
+      "french": "Impression monochrome"
+    },
+    "2 farbig auf wei\u00df": {
+      "default": "2 farbig auf wei\u00df",
+      "german": "2-farbig auf wei\u00df",
+      "swiss": "2-farbig auf weiss",
+      "italian": "2 colori su bianco",
+      "spanish": "en blanco",
+      "french": "bicolore sur blanc"
+    }
+  },
+  "language_dependent": false,
+  "csid": "95",
+  "csclass": "Pdmarticleconfiguration",
+  "Label": {
+    "default": "Farbe",
+    "german": "Farbe",
+    "swiss": "Farbe",
+    "italian": "Colore",
+    "spanish": "Color",
+    "french": "Couleur"
+  },
+  "Name": {
+    "default": "Farbe",
+    "german": "Farbe",
+    "swiss": "Farbe",
+    "italian": "Farbe",
+    "spanish": "Farbe",
+    "french": "Farbe"
+  },
+  "sku": {
+    "default": "95"
+  },
+  "is_factfinder_feature": "1",
+  "is_filter_on_product_page_default": "0"
+}
