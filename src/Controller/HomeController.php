@@ -6,6 +6,7 @@ use App\Core\BaseController;
 use App\Core\Request;
 use App\Core\View;
 use App\Services\JsonSchemaValidator;
+use App\Services\JsonValidator;
 
 class HomeController extends BaseController
 {
@@ -17,17 +18,18 @@ class HomeController extends BaseController
     public function jsonAction($prams = [], Request $request)
     {
 
-     //   $this->validateAttribute();
-     //   $this->validateMainProduct();
-        $this->validateVariant();
+       // $this->validateAttribute();
+       // $this->validateMainProduct();
+     //   $this->validateVariant();
+        $this->validateCategory();
 
     }
 
     protected function validateAttribute()
     {
-        $schema = $this->getSchemaFile('ContentservAttributeSchema.json');
+        $schema = $this->getSchemaFile('AttributeSchema.json');
         $data = $this->getExampleData('attribute_color.json');
-        $data = $this->getExampleData('attribute_ga_height_of_filling_from_to.json');
+      //  $data = $this->getExampleData('attribute_ga_height_of_filling_from_to.json');
         $jsonValidator = new JsonSchemaValidator();
         $jsonValidator->validate((object)$data, $schema);
 
@@ -35,9 +37,9 @@ class HomeController extends BaseController
 
     protected function validateMainProduct()
     {
-        $schema = $this->getSchemaFile('ContentservAbstractProductSchema.json');
+        $schema = $this->getSchemaFile('AbstractProductSchema.json');
         $data = $this->getExampleData('main-product-1.json');
-        $data = $this->getExampleData('main-product-3.json');
+    //    $data = $this->getExampleData('main-product-3.json');
         $jsonValidator = new JsonSchemaValidator();
         $jsonValidator->validate((object)$data, $schema);
 
@@ -45,9 +47,21 @@ class HomeController extends BaseController
 
     protected function validateVariant()
     {
-        $schema = $this->getSchemaFile('ContentservConcreteSchema.json');
+        $schema = $this->getSchemaFile('ConcreteSchema.json');
         $data = $this->getExampleData('variant-1.json');
-        //$data = $this->getExampleData('variant-2.json');
+        $data = $this->getExampleData('variant-2.json');
+        $jsonValidator = new JsonSchemaValidator();
+        $jsonValidator->validate((object)$data, $schema);
+
+    }
+
+    protected function validateCategory()
+    {
+        $schema = $this->getSchemaFile('CategorySchema.json');
+        $data = $this->getExampleData('category-level-1.json');
+        $data = $this->getExampleData('category-level-2.json');
+        $data = $this->getExampleData('category-level-3.json');
+
         $jsonValidator = new JsonSchemaValidator();
         $jsonValidator->validate((object)$data, $schema);
 
@@ -74,7 +88,7 @@ class HomeController extends BaseController
         $path = $this->getExampleConfig();
 
         $str = file_get_contents($path . $file);
-        return json_decode($str, true);
+        return json_decode($str);
     }
 
 

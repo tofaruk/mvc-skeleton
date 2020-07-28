@@ -11,7 +11,7 @@
   "properties": {
     "status": {
       "description": "status should be an array",
-      "type": "array",
+      "type": "object",
       "required": [
         "default"
       ],
@@ -23,7 +23,7 @@
     },
     "ParentID": {
       "description": "ParentID should be an array, it contains the category key in default",
-      "type": "array",
+      "type": "object",
       "required": [
         "default"
       ],
@@ -40,7 +40,7 @@
     },
     "sku": {
       "description": "sku should be an array, it contains the main identifier of a product",
-      "type": "array",
+      "type": "object",
       "required": [
         "default"
       ],
@@ -52,23 +52,14 @@
     },
     "multilanguage": {
       "description": "multilanguage should be an array, it contains all description for the product, which is mostly showing on PDP",
-      "type": "array",
+      "type": "object",
       "required": [
         "label",
         "bmecat_short_description"
       ],
-      "additionalProperties": true,
       "properties": {
         "label": {
-          "type": "object",
-          "required": [
-            "default",
-            "german",
-            "swiss",
-            "italian",
-            "spanish",
-            "french"
-          ]
+          "type": "object"
         }
       }
     }

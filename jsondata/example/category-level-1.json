@@ -1,0 +1,35 @@
+{
+  "status": {
+    "default": "online"
+  },
+  "csid": "30133",
+  "csclass": "Pdmarticlestructure",
+  "_attribute_set": {
+    "default": null
+  },
+  "SortOrder": {
+    "default": "3"
+  },
+  "sku": {
+    "default": "30133"
+  },
+  "ParentID": {
+    "default": ""
+  },
+  "multilanguage": {
+    "label": {
+      "default": "Webshop",
+      "german": "Webshop",
+      "swiss": "Webshop",
+      "italian": "Webshop",
+      "spanish": "Webshop",
+      "french": "Webshop"
+    }
+  },
+  "world_layer_column_count": {
+    "default": 0
+  },
+  "category_design": {
+    "default": "style_standard"
+  }
+}

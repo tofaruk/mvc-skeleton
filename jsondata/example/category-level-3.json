@@ -1,0 +1,84 @@
+{
+  "status": {
+    "default": "online"
+  },
+  "csid": "30251",
+  "csclass": "Pdmarticlestructure",
+  "_attribute_set": {
+    "default": null
+  },
+  "SortOrder": {
+    "default": "0"
+  },
+  "ParentID": {
+    "default": "18005"
+  },
+  "sku": {
+    "default": "351652"
+  },
+  "world_layer_column_count": {
+    "default": "1"
+  },
+  "category_design": {
+    "default": "style_hero"
+  },
+  "images": {
+    "pictogram_shopgate_active": {
+      "default": [
+        {
+          "url": "https:\/\/s3.eu-central-1.amazonaws.com\/ratioform-spryker-stage-images\/catalog\/15601.jpg",
+          "mdate": "2016-03-03 18:36:14",
+          "cdate": "2016-03-03 18:36:14",
+          "fileid": "15601",
+          "filename": "category_hitlist_image.png"
+        }
+      ]
+    },
+    "category_hitlist_image": {
+      "default": [
+        {
+          "url": "https:\/\/s3.eu-central-1.amazonaws.com\/ratioform-spryker-stage-images\/catalog\/15601.jpg",
+          "mdate": "2016-03-03 18:36:14",
+          "cdate": "2016-03-03 18:36:14",
+          "fileid": "15601",
+          "filename": "category_hitlist_image.jpg"
+        }
+      ]
+    }
+  },
+  "multilanguage": {
+
+    "name_navigation": {
+      "default": "<p>Verpackungschips<\/p>",
+      "german": "<p>Verpackungschips<\/p>",
+      "swiss": "<p>Verpackungschips<\/p>",
+      "italian": "Patatine di polistirolo e materiali di riempimento sfusi",
+      "spanish": "Chips de embalaje y material de relleno suelto",
+      "french": "Particules de calage et mat\u00e9riaux de remplissage en vrac"
+    },
+    "headline": {
+      "default": "Verpackungschips",
+      "german": "Verpackungschips",
+      "swiss": "Verpackungschips",
+      "italian": "Patatine di polistirolo e materiali di riempimento sfusi",
+      "spanish": "Chips de embalaje y material de relleno suelto",
+      "french": "Particules de calage et mat\u00e9riaux de remplissage en vrac"
+    },
+    "description": {
+      "default": "<p>Verpackungschips sind<strong> umweltfreundlich<\/strong> und so <strong>formstabil,<\/strong> dass Ihr Packgut im Karton fixiert und vor St\u00f6\u00dfen gesch\u00fctzt wird. Unabh\u00e4ngig von der Form eines Produktes, sind sie die praktische und schnelle L\u00f6sung zum Ausf\u00fcllen von Hohlr\u00e4umen. Die Styroporchips sind <strong>staubfrei, antistatisch<\/strong> und lassen sich problemlos <strong>wiederverwerten.<\/strong> Das <strong>passende Zubeh\u00f6r<\/strong> wie Abf\u00fclltrichter oder Aufh\u00e4nge- und Abf\u00fcllvorrichtungen k\u00f6nnen Sie ebenfalls bei uns bestellen.<\/p>",
+      "german": "<p>Verpackungschips sind<strong> umweltfreundlich<\/strong> und so <strong>formstabil,<\/strong> dass Ihr Packgut im Karton fixiert und vor St\u00f6\u00dfen gesch\u00fctzt wird. Unabh\u00e4ngig von der Form eines Produktes, sind sie die praktische und schnelle L\u00f6sung zum Ausf\u00fcllen von Hohlr\u00e4umen. Die Styroporchips sind <strong>staubfrei, antistatisch<\/strong> und lassen sich problemlos <strong>wiederverwerten.<\/strong> Das <strong>passende Zubeh\u00f6r<\/strong> wie Abf\u00fclltrichter oder Aufh\u00e4nge- und Abf\u00fcllvorrichtungen k\u00f6nnen Sie ebenfalls bei uns bestellen.<\/p>",
+      "swiss": "<p>Verpackungschips sind <strong>umweltfreundlich<\/strong> und so <strong>formstabil,<\/strong> dass Ihr Packgut in einer Box fixiert und vor St\u00f6ssen gesch\u00fctzt wird. Unabh\u00e4ngig von der Form eines Produktes, sind sie die praktische und schnelle L\u00f6sung zum Ausf\u00fcllen von Hohlr\u00e4umen. Die Styroporchips sind<strong> staubfrei, antistatisch <\/strong>und lassen sich problemlos <strong>wiederverwerten.<\/strong> Das <strong>passende Zubeh\u00f6r<\/strong> wie Abf\u00fclltrichter oder Aufh\u00e4nge- und Abf\u00fcllvorrichtungen k\u00f6nnen Sie ebenfalls bei uns bestellen.<\/p>",
+      "italian": "<p>Ecologiche e di facile impiego: le patatine di polistirolo riempiono gli spazi vuoti e impediscono il movimento della merce nell'imballo. Per riempire puoi scegliere anche materiali come la paglia di legno.<\/p>",
+      "spanish": "<p>F\u00e1ciles de usar y respetuosos con el medio ambiente: utilice los chips de relleno para huecos y evite el \"efecto arenas movedizas\". Tambi\u00e9n ofrecemos rellenos naturales en lana de madera.<\/p>",
+      "french": "<p>Les particules de calage sont <strong>\u00e9cologiques<\/strong> et <strong>ind\u00e9formables,<\/strong> \u00e0 tel point que vos produits emball\u00e9s sont parfaitement cal\u00e9s et prot\u00e9g\u00e9s contre les chocs. Elles sont la solution id\u00e9ale pour combler les vides simplement et rapidement, ind\u00e9pendamment de la forme des produits. Les particules en polystyr\u00e8ne ne produisent <strong>&nbsp;aucune poussi\u00e8re, sont antistatiques <\/strong>et sont absolument <strong>recyclables. <\/strong>Par ailleurs, nous vous proposons de la <strong>laine de bois<\/strong> et <strong>divers mat\u00e9riaux de calage et de remplissage papier<\/strong>. Vous trouverez \u00e9galement ici les <strong>accessoires adapt\u00e9s<\/strong>, tels que la goulotte de distribution ou encore des dispositifs de suspension et de remplissage.<\/p>"
+    },
+    "metadescription": {
+      "default": "Verpackungschips und loses F\u00fcllmaterial sind die leichte und praktische L\u00f6sung zum F\u00fcllen und Polstern Ihrer Versandkartons. Jetzt bei uns bestellen.",
+      "german": "Verpackungschips und loses F\u00fcllmaterial sind die leichte und praktische L\u00f6sung zum F\u00fcllen und Polstern Ihrer Versandkartons. Jetzt bei uns bestellen.",
+      "swiss": "Verpackungschips und loses F\u00fcllmaterial sind die leichte und praktische L\u00f6sung zum F\u00fcllen und Polstern Ihrer Versandkartons. Jetzt bei uns bestellen.",
+      "italian": "Le patatine di polistirolo per imballaggi riempiono gli spazi vuoti e impediscono il movimento della merce nell'imballo. Scopri di pi\u00f9!",
+      "spanish": "Chipas de embalaje y lana de madera el llenado de cajas y protecci\u00f3n de la mercanc\u00eda, en Ratioform.",
+      "french": ""
+    }
+  }
+}

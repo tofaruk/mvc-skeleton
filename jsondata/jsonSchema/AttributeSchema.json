@@ -19,7 +19,7 @@
     },
     "Label": {
       "description": "Label should be an array",
-      "type": "array",
+      "type": "object",
       "required": [
         "default",
         "german",

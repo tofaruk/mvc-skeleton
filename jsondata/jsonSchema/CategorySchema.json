@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "title": "Category validation schema",
+  "type": "object",
+  "required": [
+    "sku",
+    "multilanguage"
+  ],
+  "properties": {
+
+    "sku": {
+      "type": "object",
+      "required": [
+        "default"
+      ],
+      "properties": {
+        "default": {
+          "type": "string"
+        }
+      }
+    },
+    "multilanguage": {
+      "type": "object",
+      "required": [
+        "label",
+        "headline"
+      ],
+      "properties": {
+        "label": {
+          "type": "object"
+        },
+        "headline": {
+          "type": "object"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "status": {
+    "default": "online"
+  },
+  "csid": "30159",
+  "csclass": "Pdmarticlestructure",
+  "_attribute_set": {
+    "default": null
+  },
+  "SortOrder": {
+    "default": "3"
+  },
+  "ParentID": {
+    "default": "280802"
+  },
+  "sku": {
+    "default": "18005"
+  },
+  "world_layer_column_count": {
+    "default": "1"
+  },
+  "category_design": {
+    "default": "style_hero"
+  },
+  "images": {
+    "pictogram_shopgate_active": {
+      "default": [
+        {
+          "url": "https:\/\/s3.eu-central-1.amazonaws.com\/ratioform-spryker-stage-images\/catalog\/15298.jpg",
+          "mdate": "2017-02-21 13:58:27",
+          "cdate": "2017-02-21 13:58:27",
+          "fileid": "15298",
+          "filename": "pictogram_all_categories_active.png"
+        }
+      ]
+    },
+    "category_hitlist_image": {
+      "default": [
+        {
+          "url": "https:\/\/s3.eu-central-1.amazonaws.com\/ratioform-spryker-stage-images\/catalog\/15303.jpg",
+          "mdate": "2016-03-03 17:32:24",
+          "cdate": "2016-03-03 17:32:24",
+          "fileid": "15303",
+          "filename": "category_hitlist_image.jpg"
+        }
+      ]
+    },
+    "category_layer_image": {
+      "default": [
+        {
+          "url": "https:\/\/s3.eu-central-1.amazonaws.com\/ratioform-spryker-stage-images\/catalog\/15302.jpg",
+          "mdate": "2016-03-03 17:32:06",
+          "cdate": "2016-03-03 17:32:06",
+          "fileid": "15302",
+          "filename": "category_item_image.jpg"
+        }
+      ]
+    }
+  },
+  "multilanguage": {
+    "label": {
+      "default": "F\u00fcllen",
+      "german": "F\u00fcllen",
+      "swiss": "F\u00fcllen",
+      "italian": "Riempimento",
+      "spanish": "Material de relleno",
+      "french": "Remplissage"
+    },
+    "name_navigation": {
+      "default": "F\u00fcllen",
+      "german": "F\u00fcllen",
+      "swiss": "F\u00fcllen",
+      "italian": "Riempimento",
+      "spanish": "Material de relleno",
+      "french": "Remplissage"
+    },
+    "headline": {
+      "default": "F\u00fcllen",
+      "german": "F\u00fcllen",
+      "swiss": "F\u00fcllen",
+      "italian": "Riempimento",
+      "spanish": "Material de relleno",
+      "french": "Remplissage"
+    },
+    "description": {
+      "default": "<p>Hier finden Sie unterschiedliche F\u00fcllmaterialien f\u00fcr Ihre Versandkartons. Der Inhalt eines Kartons wird durch die schnelle&nbsp;<strong>Hohlraumf\u00fcllung<\/strong>&nbsp;w\u00e4hrend des Transports vor&nbsp;<strong>St\u00f6\u00dfen und Kratzern<\/strong>&nbsp;gesch\u00fctzt. W\u00e4hlen Sie aus verschiedenen&nbsp;<strong>Luftkissen<\/strong>&nbsp;oder entscheiden Sie sich je nach Bedarf f\u00fcr&nbsp;<strong>lose F\u00fcllmaterialen<\/strong>&nbsp;wie Verpackungschips oder Papierf\u00fcllmaterial.<\/p>",
+      "german": "<p>Hier finden Sie unterschiedliche F\u00fcllmaterialien f\u00fcr Ihre Versandkartons. Der Inhalt eines Kartons wird durch die schnelle&nbsp;<strong>Hohlraumf\u00fcllung<\/strong>&nbsp;w\u00e4hrend des Transports vor&nbsp;<strong>St\u00f6\u00dfen und Kratzern<\/strong>&nbsp;gesch\u00fctzt. W\u00e4hlen Sie aus verschiedenen&nbsp;<strong>Luftkissen<\/strong>&nbsp;oder entscheiden Sie sich je nach Bedarf f\u00fcr&nbsp;<strong>lose F\u00fcllmaterialen<\/strong>&nbsp;wie Verpackungschips oder Papierf\u00fcllmaterial.<\/p>",
+      "swiss": "<p>Hier finden Sie unterschiedliche F\u00fcllmaterialien f\u00fcr Ihre Versandboxen. Der Inhalt einer Box wird durch die schnelle <strong>Hohlraumf\u00fcllung<\/strong> w\u00e4hrend des Transports vor <strong>St\u00f6ssen und Kratzern <\/strong>gesch\u00fctzt. W\u00e4hlen Sie aus verschiedenen <strong>Luftkissen<\/strong> oder entscheiden Sie sich je nach Bedarf f\u00fcr<strong> lose F\u00fcllmaterialen<\/strong> wie Verpackungschips oder Papierf\u00fcllmaterial.<\/p>\r\n",
+      "italian": "<p>Per proteggere in maniera adeguata la merce durante il trasporto, \u00e8 indispensabile scegliere i migliori materiali per protezione e riempimento: ratioform mette a disposizione materiali affidabili e di alta qualit\u00e0 per gli imballi. Le&nbsp;<strong>patatine di polistirolo,<\/strong> note anche con il nome di chips, sono facili da impiegare ed ecologiche, si rivelano&nbsp;<strong>utili per riempire gli spazi vuoti<\/strong>&nbsp;ed impedire cos\u00ec alla merce di muoversi all'interno dell'imballo durante il trasporto.<\/p>",
+      "spanish": "Descubra una gran variedad de <b>material de relleno de embalaje para cajas<\/b>: chips de embalaje, lana de madera o rellenos de aire como las almohadas de aire.",
+      "french": "Vous trouverez ici des mat\u00e9riaux de remplissage vari\u00e9s, pour <b>combler rapidement les vides<\/b> dans vos caisses carton\u00a0: diff\u00e9rents mod\u00e8les de <b> coussins d'air<\/b> ou, selon vos besoins, des <b>mat\u00e9riaux de remplissage en vrac<\/b>, tels que des particules de calage ou de la frisure papier. Votre <b>produit cal\u00e9 dans l'emballage<\/b> est parfaitement <b>prot\u00e9g\u00e9 contre les chocs et les rayures<\/b> pendant le transport<b><\/b>."
+    },
+    "metadescription": {
+      "default": "Sie suchen f\u00fcr Ihre Verpackung F\u00fcllmaterial, das Ihre Waren optimal sch\u00fctzt? Bei uns erhalten Sie Verpackungschips, Luftpolsterkissen und vieles mehr.",
+      "german": "Sie suchen f\u00fcr Ihre Verpackung F\u00fcllmaterial, das Ihre Waren optimal sch\u00fctzt? Bei uns erhalten Sie Verpackungschips, Luftpolsterkissen und vieles mehr.",
+      "swiss": "Sie suchen f\u00fcr Ihre Verpackung F\u00fcllmaterial, das Ihre Waren optimal sch\u00fctzt? Bei uns erhalten Sie Verpackungschips, Luftpolsterkissen und vieles mehr.",
+      "italian": "Ideali per proteggere i prodotti dagli urti. Materiali di riempimento in plastica cuscini ad aria o patatine in polistirolo disponibili online",
+      "spanish": "",
+      "french": ""
+    }
+  }
+}
