@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  app:
+    container_name: mvc-php-app-dev
+    volumes:
+      - ./public:/var/www/html/public
+      - ./src:/var/www/html/src
+    environment:
+      APP_ENV: development
+
+  db:
+    container_name: mvc-mysql-db-dev

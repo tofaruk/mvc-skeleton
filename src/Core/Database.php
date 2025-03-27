@@ -9,8 +9,9 @@ class Database
 
     private function __construct()
     {
+        // TODO change the hostname 
         $this->conn = new \PDO(
-            sprintf("mysql:host=%s; dbname=%s", DB_HOST, DB_NAME),
+            sprintf("mysql:host=%s; dbname=%s", 'db', DB_NAME),
             DB_USER,
             DB_PASS
         );

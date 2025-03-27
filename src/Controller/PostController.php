@@ -19,14 +19,14 @@ class PostController extends BaseController
         $this->model = new PostModel();
     }
 
-    public function indexAction($prams = [], Request $request)
+    public function indexAction(Request $request, $prams = [])
     {
         $posts = $this->model->getAll();
         return View::render(['posts' => $posts]);
     }
 
 
-    public function detailsAction($prams = [], Request $request)
+    public function detailsAction( Request $request, $prams = [])
     {
         $commentModel = new CommentModel();
 

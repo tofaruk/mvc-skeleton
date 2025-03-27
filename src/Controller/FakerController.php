@@ -13,12 +13,12 @@ use App\Services\PostFaker;
 
 class FakerController extends BaseController
 {
-    public function indexAction($prams = [], Request $request)
+    public function indexAction( Request $request, $prams = [])
     {
         return View::render();
     }
 
-    public function addPostAction($prams = [], Request $request)
+    public function addPostAction(Request $request, $prams = [])
     {
         $postFaker = new PostFaker();
         $postModel = new PostModel();
@@ -27,7 +27,7 @@ class FakerController extends BaseController
         return View::render([], 'index.html.twig');
     }
 
-    public function addCommentAction($prams = [], Request $request)
+    public function addCommentAction(Request $request, $prams = [])
     {
         $commentFaker = new CommentFaker();
         $postModel = new PostModel();

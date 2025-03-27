@@ -66,10 +66,10 @@ class Request
     /**
      * @param array $dataFrom
      * @param $index
-     * @return mixed|null\
+     * @return mixed|null
      */
-    private function getData($dataFrom = [], $index)
+    private function getData(array $dataFrom, $index = null)
     {
-        return !is_null($index) & isset($dataFrom[$index]) ? $dataFrom[$index] : null;
+        return !is_null($index) && isset($dataFrom[$index]) ? $dataFrom[$index] : null;
     }
 }

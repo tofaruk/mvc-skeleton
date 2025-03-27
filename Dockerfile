@@ -19,7 +19,7 @@ RUN apt-get update && apt-get install -y \
     unzip \
     zip \
     && rm -rf /var/lib/apt/lists/*
-    
+
 # Install Composer globally
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
@@ -30,4 +30,4 @@ RUN composer install --no-dev --optimize-autoloader
 RUN sed -i 's|DocumentRoot /var/www/html|DocumentRoot /var/www/html/public|g' /etc/apache2/sites-available/000-default.conf
 
 # Install necessary extensions (optional, adjust as needed)
-RUN docker-php-ext-install mysqli
+RUN docker-php-ext-install pdo pdo_mysql mysqli

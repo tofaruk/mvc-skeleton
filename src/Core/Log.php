@@ -17,17 +17,14 @@ class Log extends AbstractLogger
     }
 
     /**
+     * Logs with an arbitrary level.
+     *
      * @param mixed $level
-     * @param string $message
-     * @param array $context
+     *
+     * @throws \Psr\Log\InvalidArgumentException
      */
-    public function log($level, $message, array $context = array())
+    public function log($level, string|\Stringable $message, array $context = []): void
     {
-/*        $record = [
-            'level' => $level,
-            'message' => $message,
-            'context' => $context,
-        ];*/
 
         $path = $this->path . '/' . $level . '.log';
         file_put_contents($path, json_encode([date("Y-m-d H:m:s"),$message, $context]) . PHP_EOL, FILE_APPEND);
@@ -36,6 +33,5 @@ class Log extends AbstractLogger
     protected function createPath()
     {
         if (!is_dir($this->path)) mkdir($this->path, 0777, true);
-        // if (!is_dir($this->path)) mkdir($this->path,755,true);
     }
 }
