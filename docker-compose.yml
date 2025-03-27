@@ -3,27 +3,28 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: mcv-php-app
+    container_name: mvc-php-app
     ports:
       - "8080:80"
     volumes:
-      - .:/var/www/html
+       - ./public:/var/www/html/public
     depends_on:
       - db
 
   db:
     image: mysql:8.0
-    container_name: mcv-mysql-db
+    container_name: mvc-mysql-db
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: rootpassword
-      MYSQL_DATABASE: testdb
+      MYSQL_DATABASE: mvc-db
       MYSQL_USER: user
       MYSQL_PASSWORD: userpassword
     ports:
       - "3306:3306"
     volumes:
       - db_data:/var/lib/mysql
+      - ./db/simple-mvc-framework.sql:/docker-entrypoint-initdb.d/init.sql:ro      
 
 volumes:
   db_data:

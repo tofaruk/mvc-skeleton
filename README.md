@@ -1,6 +1,13 @@
 # Simple MVC Framework
 This is a very simple MVC framework, Which will help you to create a small application. In this framework i added very few number of open source packages so its not that powerful but you can easily add new open source package very based on your need.  
 
+
+### Prerequisites
+
+- [Docker Desktop](https://www.docker.com/products/docker-desktop) (WSL 2 enabled if on Windows)
+- [Git](https://git-scm.com/)
+
+
 #### How to install 
 * Prerequisites : php and mysql installed 
 * Run `composer install && composer dump-autoload -o`

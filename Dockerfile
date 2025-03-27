@@ -7,8 +7,24 @@ RUN a2enmod rewrite
 # Set the working directory inside the container
 WORKDIR /var/www/html
 
-# Copy source code into the container
-COPY ./src /var/www/html
+# Copy entire project into the container
+COPY . /var/www/html
+
+# copy config fle
+RUN cp config/config.dist.php config/config.php
+
+# 🧩 Install system dependencies
+RUN apt-get update && apt-get install -y \
+    git \
+    unzip \
+    zip \
+    && rm -rf /var/lib/apt/lists/*
+    
+# Install Composer globally
+COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
+
+# Install dependencies
+RUN composer install --no-dev --optimize-autoloader
 
 # Set public directory as the web root
 RUN sed -i 's|DocumentRoot /var/www/html|DocumentRoot /var/www/html/public|g' /etc/apache2/sites-available/000-default.conf
