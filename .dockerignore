@@ -3,5 +3,5 @@ docs
 vendor/
 .git
 .gitignore
-README.md
+README-old.md
 docker-compose.override.yml

@@ -3,4 +3,3 @@
 .vscode/
 var/
 .env
-/config/config.php
