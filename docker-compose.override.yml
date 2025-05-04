@@ -6,6 +6,8 @@ services:
     volumes:
       - ./public:/var/www/html/public
       - ./src:/var/www/html/src
+      - ./vendor:/var/www/html/vendor
+      
     environment:
       APP_ENV: development
 

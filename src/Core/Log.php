@@ -9,10 +9,11 @@ use Psr\Log\AbstractLogger;
 class Log extends AbstractLogger
 {
     /** @var string  */
-    protected $path = APP_VAR . '/log';
+    protected $path = null;
 
     public function __construct()
     {
+        $this->path = Config::get('APP_VAR') . '/log';
         $this->createPath();
     }
 

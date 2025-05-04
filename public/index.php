@@ -7,6 +7,10 @@ require __DIR__ . "/../vendor/autoload.php";
 
 use App\Route\Routes as AppRoutes;
 use App\Core\RouteHandler;
+use Dotenv\Dotenv;
+
+$dotenv = Dotenv::createImmutable(__DIR__ . '/../'); // path to .env file
+$dotenv->load();
 
 $dispatcher = FastRoute\simpleDispatcher(function (FastRoute\RouteCollector $r) {
     AppRoutes::defineRoutes($r);

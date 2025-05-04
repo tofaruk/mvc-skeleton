@@ -10,8 +10,6 @@ WORKDIR /var/www/html
 # Copy entire project into the container
 COPY . /var/www/html
 
-# copy config fle
-RUN cp config/config.dist.php config/config.php
 
 # 🧩 Install system dependencies
 RUN apt-get update && apt-get install -y \

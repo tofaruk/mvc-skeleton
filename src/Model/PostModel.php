@@ -80,17 +80,17 @@ class PostModel extends BaseModel
     /**
      * @return array
      */
-    public function getAll()
+    public function getAll(): array
     {
         try {
             $statement = $this->db->query("SELECT * FROM " . $this->table." ORDER BY created DESC");
-            return $result = $statement->fetchAll(\PDO::FETCH_OBJ);
+            return   $statement->fetchAll(\PDO::FETCH_OBJ);
         } catch (\PDOException $e) {
             $error = array("message" => $e->getMessage());
         } catch (\Exception $e) {
             $error = array("message" => $e->getMessage());
         }
         $this->log->error(__METHOD__, $error);
-        return;
+        return [];
     }
 }

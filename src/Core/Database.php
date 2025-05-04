@@ -11,9 +11,9 @@ class Database
     {
         // TODO change the hostname 
         $this->conn = new \PDO(
-            sprintf("mysql:host=%s; dbname=%s", 'db', DB_NAME),
-            DB_USER,
-            DB_PASS
+            sprintf("mysql:host=%s; dbname=%s", Config::get('DB_HOST'), Config::get('DB_NAME')),
+            Config::get('DB_USER'),
+            Config::get('DB_PASS')
         );
         $this->conn->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
     }

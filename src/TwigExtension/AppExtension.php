@@ -3,6 +3,7 @@
 namespace App\TwigExtension;
 
 
+use App\Core\Config;
 use App\Services\TimeUtilities;
 use Twig\Extension\AbstractExtension;
 use Twig\TwigFunction;
@@ -20,12 +21,12 @@ class AppExtension extends AbstractExtension
 
     public function getAppHostNameConst($suffix = null)
     {
-        return APP_HOST_NAME . $suffix;
+        return  Config::get('APP_HOST_NAME') . $suffix;
     }
 
     public function getAppNameConst()
     {
-        return APP_NAME;
+        return Config::get('APP_NAME');
     }
 
     public function getTimeAgo($datetime, $full = false)

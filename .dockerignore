@@ -2,6 +2,6 @@ db
 docs
 vendor/
 .git
-.env
 .gitignore
 README.md
+docker-compose.override.yml

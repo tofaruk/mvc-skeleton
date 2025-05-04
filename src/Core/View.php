@@ -16,7 +16,7 @@ class View
 
     private function __construct()
     {
-        $this->loader = new FilesystemLoader(sprintf($this->viewPath, APP_ROOT));
+        $this->loader = new FilesystemLoader(sprintf($this->viewPath, Config::get('APP_ROOT')));
         $this->initializeTwigEnvironment();
     }
 
