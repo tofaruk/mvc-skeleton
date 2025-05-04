@@ -2,7 +2,6 @@
 
 use App\Core\Request;
 
-require __DIR__ . "/../config/config.php";
 require __DIR__ . "/../vendor/autoload.php";
 
 use App\Route\Routes as AppRoutes;

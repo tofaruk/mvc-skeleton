@@ -24,7 +24,7 @@ class View
     {
         $options = [];
         $this->twig = new Environment($this->loader, $options);
-        if (TWIG_DEBUG) {
+        if (Config::get('TWIG_DEBUG')) {
             $this->twig->enableDebug();
             $this->twig->addExtension(new DebugExtension());
         }
@@ -93,7 +93,7 @@ class View
         }
         if ($method == null && isset($trace[2]['function'])) {
             $method = $trace[2]['function'];
-            return $method = str_replace(ConfigConstants::APP_CONTROLLER_METHOD_SUFFIX, '.html.twig', $method);
+            return str_replace(ConfigConstants::APP_CONTROLLER_METHOD_SUFFIX, '.html.twig', $method);
         }
         return $method;
     }
